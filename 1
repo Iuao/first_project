@@ -5,59 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: "Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]", server: cu-cs.okvpn.xyz, port: 20003, type: trojan, password: 8b897fd1-cff3-4a60-a887-46f875d3b21b, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: "Trojan|🇭🇰 香港YouTube梦歌04|Netflix]", server: cu-cs.okvpn.xyz, port: 20000, type: trojan, password: 8b897fd1-cff3-4a60-a887-46f875d3b21b, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: YouTube梦歌|Netflix_17, server: cstwrelay.onlineto.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: YouTube梦歌|Netflix_15, server: cstwrelay.onlineto.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
+  - {name: "Trojan|🇭🇰 香港YouTube梦歌01|Netflix]", server: cm-gz.okvpn.xyz, port: 20000, type: trojan, password: 8b897fd1-cff3-4a60-a887-46f875d3b21b, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: "Trojan|🇲🇾 马来西亚YouTube梦歌03|Netflix]", server: cm-gz.okvpn.xyz, port: 20005, type: trojan, password: 8b897fd1-cff3-4a60-a887-46f875d3b21b, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
   - {name: YouTube梦歌|Netflix_7, server: 70.262292.xyz, port: 80, type: vmess, uuid: d3c8e3c0-c300-4b7d-a553-91f9f30255b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: a.189.cn}, udp: true}
-  - {name: YouTube梦歌|Netflix_14, server: cstwrelay.onlineto.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: YouTube梦歌|Netflix_58, server: us.zzk8.me, port: 40666, type: trojan, password: 1598c0bb-8ef7-40d1-a6ab-1b8de58c2afb, sni: us.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_50, server: us.zzk8.me, port: 40666, type: trojan, password: 6b6842a1-1ea4-407f-bbea-7707b2a78861, sni: us.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_60, server: us.zzk8.me, port: 40666, type: trojan, password: 45b5d43e-825f-42a8-99da-ae9134f8d6c9, sni: us.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_59, server: us.zzk8.me, port: 40666, type: trojan, password: a100b242-2faa-4702-914a-ca0e0f8a90e0, sni: us.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_109, server: yyyy.wwwbhjy.com, port: 2443, type: vmess, uuid: dee32eb7-e190-4c6f-dd27-aa9c82cd5490, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /8a76fb13/, ws-headers: {Host: yyyy.wwwbhjy.com}, udp: true}
+  - {name: "Trojan|🇺🇸 美国YouTube梦歌10|Netflix]", server: cu-cs.okvpn.xyz, port: 20009, type: trojan, password: 8b897fd1-cff3-4a60-a887-46f875d3b21b, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: "Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]", server: cm-gz.okvpn.xyz, port: 20003, type: trojan, password: 8b897fd1-cff3-4a60-a887-46f875d3b21b, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌04|Netflix]
       - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_15
+      - Trojan|🇭🇰 香港YouTube梦歌01|Netflix]
+      - Trojan|🇲🇾 马来西亚YouTube梦歌03|Netflix]
       - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_109
+      - Trojan|🇺🇸 美国YouTube梦歌10|Netflix]
+      - Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌04|Netflix]
       - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_15
+      - Trojan|🇭🇰 香港YouTube梦歌01|Netflix]
+      - Trojan|🇲🇾 马来西亚YouTube梦歌03|Netflix]
       - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_109
+      - Trojan|🇺🇸 美国YouTube梦歌10|Netflix]
+      - Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌04|Netflix]
       - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_15
+      - Trojan|🇭🇰 香港YouTube梦歌01|Netflix]
+      - Trojan|🇲🇾 马来西亚YouTube梦歌03|Netflix]
       - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_109
+      - Trojan|🇺🇸 美国YouTube梦歌10|Netflix]
+      - Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,63 +72,63 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌04|Netflix]
       - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_15
+      - Trojan|🇭🇰 香港YouTube梦歌01|Netflix]
+      - Trojan|🇲🇾 马来西亚YouTube梦歌03|Netflix]
       - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_109
+      - Trojan|🇺🇸 美国YouTube梦歌10|Netflix]
+      - Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌04|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌01|Netflix]
+      - Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌04|Netflix]
       - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_15
+      - Trojan|🇭🇰 香港YouTube梦歌01|Netflix]
+      - Trojan|🇲🇾 马来西亚YouTube梦歌03|Netflix]
       - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_109
+      - Trojan|🇺🇸 美国YouTube梦歌10|Netflix]
+      - Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌04|Netflix]
       - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_15
+      - Trojan|🇭🇰 香港YouTube梦歌01|Netflix]
+      - Trojan|🇲🇾 马来西亚YouTube梦歌03|Netflix]
       - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_109
+      - Trojan|🇺🇸 美国YouTube梦歌10|Netflix]
+      - Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌04|Netflix]
       - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_15
+      - Trojan|🇭🇰 香港YouTube梦歌01|Netflix]
+      - Trojan|🇲🇾 马来西亚YouTube梦歌03|Netflix]
       - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_109
+      - Trojan|🇺🇸 美国YouTube梦歌10|Netflix]
+      - Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,15 +144,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix]
+      - Trojan|🇭🇰 香港YouTube梦歌04|Netflix]
       - YouTube梦歌|Netflix_17
-      - YouTube梦歌|Netflix_15
+      - Trojan|🇭🇰 香港YouTube梦歌01|Netflix]
+      - Trojan|🇲🇾 马来西亚YouTube梦歌03|Netflix]
       - YouTube梦歌|Netflix_7
-      - YouTube梦歌|Netflix_14
-      - YouTube梦歌|Netflix_58
-      - YouTube梦歌|Netflix_50
-      - YouTube梦歌|Netflix_60
-      - YouTube梦歌|Netflix_59
-      - YouTube梦歌|Netflix_109
+      - Trojan|🇺🇸 美国YouTube梦歌10|Netflix]
+      - Trojan|🇹🇼 台湾YouTube梦歌01|Netflix]
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
