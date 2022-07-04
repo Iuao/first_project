@@ -5,207 +5,275 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Y2, server: 36.138.178.176, port: 50060, type: ss, cipher: aes-256-gcm, password: 298a9452-1e50-48f0-a5bc-aa8d5269ca99, udp: true}
-  - {name: Y3, server: 36.139.154.168, port: 50065, type: ss, cipher: aes-256-gcm, password: 298a9452-1e50-48f0-a5bc-aa8d5269ca99, udp: true}
-  - {name: Y4, server: tr.gzfxd.xyz, port: 20178, type: trojan, password: 02789373-e4d4-4b04-b85c-83b17c96225f, sni: tr.gzfxd.xyz, skip-cert-verify: true, udp: true}
-  - {name: Y5, server: 36.138.178.176, port: 50058, type: ss, cipher: aes-256-gcm, password: 298a9452-1e50-48f0-a5bc-aa8d5269ca99, udp: true}
-  - {name: Y6, server: gzyd2.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
-  - {name: Y7, server: hnyd.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: Y8, server: hinet.52147.top, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
-  - {name: Y9, server: gzyd1.52147.top, port: 30130, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: Y10, server: vn1.4gsinhvien.online, port: 80, type: vmess, uuid: d3769495-42f3-451a-8383-959b7cf7452d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.akamaized.net}, udp: true}
-  - {name: YouTube梦歌|Netflix_144, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_20, server: gzyd1.52147.top, port: 30120, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_90, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_111, server: azhj001.xiba1.xyz, port: 20720, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_64, server: vn.4gsinhvien.online, port: 80, type: vmess, uuid: d3769495-42f3-451a-8383-959b7cf7452d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.akamaized.net}, udp: true}
-  - {name: YouTube梦歌|Netflix_121, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_110, server: azhj001.xiba1.xyz, port: 20727, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_83, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_24, server: jpgmo.crunode.top, port: 443, type: trojan, password: 02789373-e4d4-4b04-b85c-83b17c96225f, sni: jpgmo.crunode.top, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_114, server: azhj001.xiba1.xyz, port: 20721, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_134, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_113, server: azhj001.xiba1.xyz, port: 20725, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_130, server: azhj001.xiba1.xyz, port: 20722, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_33, server: tr.gzfxd.xyz, port: 58986, type: trojan, password: 02789373-e4d4-4b04-b85c-83b17c96225f, sni: tr.gzfxd.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_117, server: azhj001.xiba1.xyz, port: 20719, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_126, server: azhj001.xiba1.xyz, port: 20726, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_115, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_28, server: hnyd.52147.top, port: 30120, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_124, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_49, server: 10Gbps.4gsinhvien.online, port: 80, type: vmess, uuid: d3769495-42f3-451a-8383-959b7cf7452d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.akamaized.net}, udp: true}
-  - {name: YouTube梦歌|Netflix_157, server: 103.173.255.234, port: 28000, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_145, server: azgy001.xiba1.xyz, port: 6004, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_138, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_119, server: azhj001.xiba1.xyz, port: 20724, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_29, server: tr.gzfxd.xyz, port: 49053, type: trojan, password: 02789373-e4d4-4b04-b85c-83b17c96225f, sni: tr.gzfxd.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_132, server: azhj001.xiba1.xyz, port: 20718, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_122, server: azhj001.xiba1.xyz, port: 20723, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_80, server: ftp.cn.debian.cdnet.in, port: 8020, type: ss, cipher: aes-128-gcm, password: 20f047fe-00e0-408b-bd9a-e6b709b35ef1, udp: true}
-  - {name: YouTube梦歌|Netflix_150, server: azgy001.xiba1.xyz, port: 20716, type: trojan, password: d87a712d-655f-3a5d-b341-bbc4540a8b5d, sni: azgy001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_91, server: 36.139.154.168, port: 50062, type: ss, cipher: aes-256-gcm, password: 298a9452-1e50-48f0-a5bc-aa8d5269ca99, udp: true}
-  - {name: YouTube梦歌|Netflix_118, server: azhj001.xiba1.xyz, port: 20715, type: trojan, password: 7497242f-3044-3c77-bf48-14bb26c92a83, sni: azhj001.xiba1.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_42, server: hnyd.52147.top, port: 30130, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_55, server: tr.gzfxd.xyz, port: 52813, type: trojan, password: 02789373-e4d4-4b04-b85c-83b17c96225f, sni: tr.gzfxd.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_159, server: jp07.xiaoqi99.cf, port: 10125, type: vmess, uuid: 65077979-2f40-4c42-a03d-d67da3d2e5d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp07.xiaoqi99.cf}, udp: true}
-  - {name: YouTube梦歌|Netflix_74, server: khaz1.crunode.top, port: 1600, type: trojan, password: 02789373-e4d4-4b04-b85c-83b17c96225f, sni: khaz1.crunode.top, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_61, server: tr.gzfxd.xyz, port: 11892, type: trojan, password: 02789373-e4d4-4b04-b85c-83b17c96225f, sni: tr.gzfxd.xyz, skip-cert-verify: true, udp: true}
-  - {name: Y1, server: gzyd1.52147.top, port: 30010, type: trojan, password: 213d1480-23fd-44aa-9d91-b1e3502a59c5, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_15, server: iepl02.pglmamle.xyz, port: 7021, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 12010:vgELJC, obfs-param: ZDM4YTAxMjAxMC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_199, server: v211.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v211.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_155, server: v209.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v209.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_73, server: v202.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v202.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_94, server: v224.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v224.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_178, server: v206.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v206.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_144, server: v216.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v216.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_185, server: v204.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v204.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_211, server: v213.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v213.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_164, server: v244.swty.buzz, port: 42635, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v244.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_190, server: v258.swty.buzz, port: 41790, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v258.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_159, server: v260.swty.buzz, port: 23464, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v260.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_192, server: v208.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v208.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_177, server: v207.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v207.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_93, server: v223.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v223.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_72, server: v203.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v203.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_88, server: v222.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v222.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_195, server: v246.swty.buzz, port: 18362, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v246.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_92, server: v229.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v229.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_203, server: v257.swty.buzz, port: 26114, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v257.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_183, server: v243.swty.buzz, port: 13465, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v243.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_86, server: v230.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v230.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_167, server: v259.swty.buzz, port: 35179, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v259.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_184, server: v249.swty.buzz, port: 10408, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v249.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_191, server: v255.swty.buzz, port: 24256, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v255.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_175, server: v242.swty.buzz, port: 35273, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v242.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_158, server: v247.swty.buzz, port: 38553, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v247.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_169, server: v251.swty.buzz, port: 39172, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v251.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_208, server: v254.swty.buzz, port: 32844, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v254.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_85, server: v221.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v221.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_99, server: v205.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v205.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_213, server: v248.swty.buzz, port: 26751, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v248.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_29, server: iepl03.pglmamle.xyz, port: 7021, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 12010:vgELJC, obfs-param: ZDM4YTAxMjAxMC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_182, server: 85.208.108.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube梦歌|Netflix_46, server: iepl03.pglmamle.xyz, port: 7033, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 12010:vgELJC, obfs-param: ZDM4YTAxMjAxMC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_126, server: v227.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v227.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_154, server: v235.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v235.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_152, server: v233.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v233.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_52, server: iepl03.pglmamle.xyz, port: 7087, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 12010:vgELJC, obfs-param: ZDM4YTAxMjAxMC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: "Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]", server: cm-gz.okvpn.xyz, port: 20003, type: trojan, password: d6c81482-2993-419c-a602-df2f912ea4ba, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_153, server: v231.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v231.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_96, server: pp1.zhengzhongfeizhu.xyz, port: 34003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_97, server: pp1.zhengzhongfeizhu.xyz, port: 32002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_99, server: pp1.zhengzhongfeizhu.xyz, port: 32001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_125, server: pp1.zhengzhongfeizhu.xyz, port: 34000, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_119, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_109, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_113, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_108, server: pp1.zhengzhongfeizhu.xyz, port: 34001, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_122, server: pp1.zhengzhongfeizhu.xyz, port: 34002, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_57, server: iepl03.pglmamle.xyz, port: 7083, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 12010:vgELJC, obfs-param: ZDM4YTAxMjAxMC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: YouTube梦歌|Netflix_84, server: 625us.ok365.cyou, port: 443, type: trojan, password: 30ff4b59-cf4a-4e44-9677-88a823434cd7, sni: 625us.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_124, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: "Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]", server: cu-cs.okvpn.xyz, port: 20003, type: trojan, password: d6c81482-2993-419c-a602-df2f912ea4ba, sni: cu-cs.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_60, server: iepl03.pglmamle.xyz, port: 7085, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 12010:vgELJC, obfs-param: ZDM4YTAxMjAxMC5taWNyb3NvZnQuY29t, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_102, server: v220.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v220.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_117, server: pp1.zhengzhongfeizhu.xyz, port: 32003, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_206, server: v256.swty.buzz, port: 20044, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v256.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_130, server: 85.208.108.19, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: YouTube梦歌|Netflix_129, server: 194.156.231.254, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: "Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]", server: cm-gz.okvpn.xyz, port: 20000, type: trojan, password: d6c81482-2993-419c-a602-df2f912ea4ba, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|解锁流媒体_186, server: v240.swty.buzz, port: 12155, type: vmess, uuid: 309e0721-0c43-49b9-96db-0431cd83e857, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: v240.swty.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_95, server: pp1.zhengzhongfeizhu.xyz, port: 32000, type: trojan, password: 2f606ee8-3cfa-30b2-a191-f88efe912f5c, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Y2
-      - Y3
-      - Y4
-      - Y5
-      - Y6
-      - Y7
-      - Y8
-      - Y9
-      - Y10
-      - YouTube梦歌|Netflix_144
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_157
-      - YouTube梦歌|Netflix_145
-      - YouTube梦歌|Netflix_138
-      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|解锁流媒体_199
+      - YouTube梦歌|解锁流媒体_155
+      - YouTube梦歌|解锁流媒体_73
+      - YouTube梦歌|解锁流媒体_94
+      - YouTube梦歌|解锁流媒体_178
+      - YouTube梦歌|解锁流媒体_144
+      - YouTube梦歌|解锁流媒体_185
+      - YouTube梦歌|解锁流媒体_211
+      - YouTube梦歌|解锁流媒体_164
+      - YouTube梦歌|解锁流媒体_190
+      - YouTube梦歌|解锁流媒体_159
+      - YouTube梦歌|解锁流媒体_192
+      - YouTube梦歌|解锁流媒体_177
+      - YouTube梦歌|解锁流媒体_93
+      - YouTube梦歌|解锁流媒体_72
+      - YouTube梦歌|解锁流媒体_88
+      - YouTube梦歌|解锁流媒体_195
+      - YouTube梦歌|解锁流媒体_92
+      - YouTube梦歌|解锁流媒体_203
+      - YouTube梦歌|解锁流媒体_183
+      - YouTube梦歌|解锁流媒体_86
+      - YouTube梦歌|解锁流媒体_167
+      - YouTube梦歌|解锁流媒体_184
+      - YouTube梦歌|解锁流媒体_191
+      - YouTube梦歌|解锁流媒体_175
+      - YouTube梦歌|解锁流媒体_158
+      - YouTube梦歌|解锁流媒体_169
+      - YouTube梦歌|解锁流媒体_208
+      - YouTube梦歌|解锁流媒体_85
+      - YouTube梦歌|解锁流媒体_99
+      - YouTube梦歌|解锁流媒体_213
       - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_132
+      - YouTube梦歌|解锁流媒体_182
+      - YouTube梦歌|Netflix_46
+      - YouTube梦歌|解锁流媒体_126
+      - YouTube梦歌|解锁流媒体_154
+      - YouTube梦歌|解锁流媒体_152
+      - YouTube梦歌|Netflix_52
+      - Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_153
+      - YouTube梦歌|Netflix_96
+      - YouTube梦歌|Netflix_97
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_125
+      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_113
+      - YouTube梦歌|Netflix_108
       - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_150
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_159
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_61
-      - Y1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_84
+      - YouTube梦歌|Netflix_124
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|解锁流媒体_102
+      - YouTube梦歌|Netflix_117
+      - YouTube梦歌|解锁流媒体_206
+      - YouTube梦歌|解锁流媒体_130
+      - YouTube梦歌|Netflix_129
+      - Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_186
+      - YouTube梦歌|Netflix_95
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Y2
-      - Y3
-      - Y4
-      - Y5
-      - Y6
-      - Y7
-      - Y8
-      - Y9
-      - Y10
-      - YouTube梦歌|Netflix_144
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_157
-      - YouTube梦歌|Netflix_145
-      - YouTube梦歌|Netflix_138
-      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|解锁流媒体_199
+      - YouTube梦歌|解锁流媒体_155
+      - YouTube梦歌|解锁流媒体_73
+      - YouTube梦歌|解锁流媒体_94
+      - YouTube梦歌|解锁流媒体_178
+      - YouTube梦歌|解锁流媒体_144
+      - YouTube梦歌|解锁流媒体_185
+      - YouTube梦歌|解锁流媒体_211
+      - YouTube梦歌|解锁流媒体_164
+      - YouTube梦歌|解锁流媒体_190
+      - YouTube梦歌|解锁流媒体_159
+      - YouTube梦歌|解锁流媒体_192
+      - YouTube梦歌|解锁流媒体_177
+      - YouTube梦歌|解锁流媒体_93
+      - YouTube梦歌|解锁流媒体_72
+      - YouTube梦歌|解锁流媒体_88
+      - YouTube梦歌|解锁流媒体_195
+      - YouTube梦歌|解锁流媒体_92
+      - YouTube梦歌|解锁流媒体_203
+      - YouTube梦歌|解锁流媒体_183
+      - YouTube梦歌|解锁流媒体_86
+      - YouTube梦歌|解锁流媒体_167
+      - YouTube梦歌|解锁流媒体_184
+      - YouTube梦歌|解锁流媒体_191
+      - YouTube梦歌|解锁流媒体_175
+      - YouTube梦歌|解锁流媒体_158
+      - YouTube梦歌|解锁流媒体_169
+      - YouTube梦歌|解锁流媒体_208
+      - YouTube梦歌|解锁流媒体_85
+      - YouTube梦歌|解锁流媒体_99
+      - YouTube梦歌|解锁流媒体_213
       - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_132
+      - YouTube梦歌|解锁流媒体_182
+      - YouTube梦歌|Netflix_46
+      - YouTube梦歌|解锁流媒体_126
+      - YouTube梦歌|解锁流媒体_154
+      - YouTube梦歌|解锁流媒体_152
+      - YouTube梦歌|Netflix_52
+      - Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_153
+      - YouTube梦歌|Netflix_96
+      - YouTube梦歌|Netflix_97
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_125
+      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_113
+      - YouTube梦歌|Netflix_108
       - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_150
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_159
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_61
-      - Y1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_84
+      - YouTube梦歌|Netflix_124
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|解锁流媒体_102
+      - YouTube梦歌|Netflix_117
+      - YouTube梦歌|解锁流媒体_206
+      - YouTube梦歌|解锁流媒体_130
+      - YouTube梦歌|Netflix_129
+      - Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_186
+      - YouTube梦歌|Netflix_95
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Y2
-      - Y3
-      - Y4
-      - Y5
-      - Y6
-      - Y7
-      - Y8
-      - Y9
-      - Y10
-      - YouTube梦歌|Netflix_144
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_157
-      - YouTube梦歌|Netflix_145
-      - YouTube梦歌|Netflix_138
-      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|解锁流媒体_199
+      - YouTube梦歌|解锁流媒体_155
+      - YouTube梦歌|解锁流媒体_73
+      - YouTube梦歌|解锁流媒体_94
+      - YouTube梦歌|解锁流媒体_178
+      - YouTube梦歌|解锁流媒体_144
+      - YouTube梦歌|解锁流媒体_185
+      - YouTube梦歌|解锁流媒体_211
+      - YouTube梦歌|解锁流媒体_164
+      - YouTube梦歌|解锁流媒体_190
+      - YouTube梦歌|解锁流媒体_159
+      - YouTube梦歌|解锁流媒体_192
+      - YouTube梦歌|解锁流媒体_177
+      - YouTube梦歌|解锁流媒体_93
+      - YouTube梦歌|解锁流媒体_72
+      - YouTube梦歌|解锁流媒体_88
+      - YouTube梦歌|解锁流媒体_195
+      - YouTube梦歌|解锁流媒体_92
+      - YouTube梦歌|解锁流媒体_203
+      - YouTube梦歌|解锁流媒体_183
+      - YouTube梦歌|解锁流媒体_86
+      - YouTube梦歌|解锁流媒体_167
+      - YouTube梦歌|解锁流媒体_184
+      - YouTube梦歌|解锁流媒体_191
+      - YouTube梦歌|解锁流媒体_175
+      - YouTube梦歌|解锁流媒体_158
+      - YouTube梦歌|解锁流媒体_169
+      - YouTube梦歌|解锁流媒体_208
+      - YouTube梦歌|解锁流媒体_85
+      - YouTube梦歌|解锁流媒体_99
+      - YouTube梦歌|解锁流媒体_213
       - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_132
+      - YouTube梦歌|解锁流媒体_182
+      - YouTube梦歌|Netflix_46
+      - YouTube梦歌|解锁流媒体_126
+      - YouTube梦歌|解锁流媒体_154
+      - YouTube梦歌|解锁流媒体_152
+      - YouTube梦歌|Netflix_52
+      - Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_153
+      - YouTube梦歌|Netflix_96
+      - YouTube梦歌|Netflix_97
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_125
+      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_113
+      - YouTube梦歌|Netflix_108
       - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_150
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_159
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_61
-      - Y1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_84
+      - YouTube梦歌|Netflix_124
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|解锁流媒体_102
+      - YouTube梦歌|Netflix_117
+      - YouTube梦歌|解锁流媒体_206
+      - YouTube梦歌|解锁流媒体_130
+      - YouTube梦歌|Netflix_129
+      - Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_186
+      - YouTube梦歌|Netflix_95
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -224,211 +292,282 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Y2
-      - Y3
-      - Y4
-      - Y5
-      - Y6
-      - Y7
-      - Y8
-      - Y9
-      - Y10
-      - YouTube梦歌|Netflix_144
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_157
-      - YouTube梦歌|Netflix_145
-      - YouTube梦歌|Netflix_138
-      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|解锁流媒体_199
+      - YouTube梦歌|解锁流媒体_155
+      - YouTube梦歌|解锁流媒体_73
+      - YouTube梦歌|解锁流媒体_94
+      - YouTube梦歌|解锁流媒体_178
+      - YouTube梦歌|解锁流媒体_144
+      - YouTube梦歌|解锁流媒体_185
+      - YouTube梦歌|解锁流媒体_211
+      - YouTube梦歌|解锁流媒体_164
+      - YouTube梦歌|解锁流媒体_190
+      - YouTube梦歌|解锁流媒体_159
+      - YouTube梦歌|解锁流媒体_192
+      - YouTube梦歌|解锁流媒体_177
+      - YouTube梦歌|解锁流媒体_93
+      - YouTube梦歌|解锁流媒体_72
+      - YouTube梦歌|解锁流媒体_88
+      - YouTube梦歌|解锁流媒体_195
+      - YouTube梦歌|解锁流媒体_92
+      - YouTube梦歌|解锁流媒体_203
+      - YouTube梦歌|解锁流媒体_183
+      - YouTube梦歌|解锁流媒体_86
+      - YouTube梦歌|解锁流媒体_167
+      - YouTube梦歌|解锁流媒体_184
+      - YouTube梦歌|解锁流媒体_191
+      - YouTube梦歌|解锁流媒体_175
+      - YouTube梦歌|解锁流媒体_158
+      - YouTube梦歌|解锁流媒体_169
+      - YouTube梦歌|解锁流媒体_208
+      - YouTube梦歌|解锁流媒体_85
+      - YouTube梦歌|解锁流媒体_99
+      - YouTube梦歌|解锁流媒体_213
       - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_132
+      - YouTube梦歌|解锁流媒体_182
+      - YouTube梦歌|Netflix_46
+      - YouTube梦歌|解锁流媒体_126
+      - YouTube梦歌|解锁流媒体_154
+      - YouTube梦歌|解锁流媒体_152
+      - YouTube梦歌|Netflix_52
+      - Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_153
+      - YouTube梦歌|Netflix_96
+      - YouTube梦歌|Netflix_97
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_125
+      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_113
+      - YouTube梦歌|Netflix_108
       - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_150
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_159
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_61
-      - Y1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_84
+      - YouTube梦歌|Netflix_124
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|解锁流媒体_102
+      - YouTube梦歌|Netflix_117
+      - YouTube梦歌|解锁流媒体_206
+      - YouTube梦歌|解锁流媒体_130
+      - YouTube梦歌|Netflix_129
+      - Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_186
+      - YouTube梦歌|Netflix_95
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]
+      - Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Y2
-      - Y3
-      - Y4
-      - Y5
-      - Y6
-      - Y7
-      - Y8
-      - Y9
-      - Y10
-      - YouTube梦歌|Netflix_144
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_157
-      - YouTube梦歌|Netflix_145
-      - YouTube梦歌|Netflix_138
-      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|解锁流媒体_199
+      - YouTube梦歌|解锁流媒体_155
+      - YouTube梦歌|解锁流媒体_73
+      - YouTube梦歌|解锁流媒体_94
+      - YouTube梦歌|解锁流媒体_178
+      - YouTube梦歌|解锁流媒体_144
+      - YouTube梦歌|解锁流媒体_185
+      - YouTube梦歌|解锁流媒体_211
+      - YouTube梦歌|解锁流媒体_164
+      - YouTube梦歌|解锁流媒体_190
+      - YouTube梦歌|解锁流媒体_159
+      - YouTube梦歌|解锁流媒体_192
+      - YouTube梦歌|解锁流媒体_177
+      - YouTube梦歌|解锁流媒体_93
+      - YouTube梦歌|解锁流媒体_72
+      - YouTube梦歌|解锁流媒体_88
+      - YouTube梦歌|解锁流媒体_195
+      - YouTube梦歌|解锁流媒体_92
+      - YouTube梦歌|解锁流媒体_203
+      - YouTube梦歌|解锁流媒体_183
+      - YouTube梦歌|解锁流媒体_86
+      - YouTube梦歌|解锁流媒体_167
+      - YouTube梦歌|解锁流媒体_184
+      - YouTube梦歌|解锁流媒体_191
+      - YouTube梦歌|解锁流媒体_175
+      - YouTube梦歌|解锁流媒体_158
+      - YouTube梦歌|解锁流媒体_169
+      - YouTube梦歌|解锁流媒体_208
+      - YouTube梦歌|解锁流媒体_85
+      - YouTube梦歌|解锁流媒体_99
+      - YouTube梦歌|解锁流媒体_213
       - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_132
+      - YouTube梦歌|解锁流媒体_182
+      - YouTube梦歌|Netflix_46
+      - YouTube梦歌|解锁流媒体_126
+      - YouTube梦歌|解锁流媒体_154
+      - YouTube梦歌|解锁流媒体_152
+      - YouTube梦歌|Netflix_52
+      - Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_153
+      - YouTube梦歌|Netflix_96
+      - YouTube梦歌|Netflix_97
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_125
+      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_113
+      - YouTube梦歌|Netflix_108
       - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_150
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_159
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_61
-      - Y1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_84
+      - YouTube梦歌|Netflix_124
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|解锁流媒体_102
+      - YouTube梦歌|Netflix_117
+      - YouTube梦歌|解锁流媒体_206
+      - YouTube梦歌|解锁流媒体_130
+      - YouTube梦歌|Netflix_129
+      - Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_186
+      - YouTube梦歌|Netflix_95
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Y2
-      - Y3
-      - Y4
-      - Y5
-      - Y6
-      - Y7
-      - Y8
-      - Y9
-      - Y10
-      - YouTube梦歌|Netflix_144
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_157
-      - YouTube梦歌|Netflix_145
-      - YouTube梦歌|Netflix_138
-      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|解锁流媒体_199
+      - YouTube梦歌|解锁流媒体_155
+      - YouTube梦歌|解锁流媒体_73
+      - YouTube梦歌|解锁流媒体_94
+      - YouTube梦歌|解锁流媒体_178
+      - YouTube梦歌|解锁流媒体_144
+      - YouTube梦歌|解锁流媒体_185
+      - YouTube梦歌|解锁流媒体_211
+      - YouTube梦歌|解锁流媒体_164
+      - YouTube梦歌|解锁流媒体_190
+      - YouTube梦歌|解锁流媒体_159
+      - YouTube梦歌|解锁流媒体_192
+      - YouTube梦歌|解锁流媒体_177
+      - YouTube梦歌|解锁流媒体_93
+      - YouTube梦歌|解锁流媒体_72
+      - YouTube梦歌|解锁流媒体_88
+      - YouTube梦歌|解锁流媒体_195
+      - YouTube梦歌|解锁流媒体_92
+      - YouTube梦歌|解锁流媒体_203
+      - YouTube梦歌|解锁流媒体_183
+      - YouTube梦歌|解锁流媒体_86
+      - YouTube梦歌|解锁流媒体_167
+      - YouTube梦歌|解锁流媒体_184
+      - YouTube梦歌|解锁流媒体_191
+      - YouTube梦歌|解锁流媒体_175
+      - YouTube梦歌|解锁流媒体_158
+      - YouTube梦歌|解锁流媒体_169
+      - YouTube梦歌|解锁流媒体_208
+      - YouTube梦歌|解锁流媒体_85
+      - YouTube梦歌|解锁流媒体_99
+      - YouTube梦歌|解锁流媒体_213
       - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_132
+      - YouTube梦歌|解锁流媒体_182
+      - YouTube梦歌|Netflix_46
+      - YouTube梦歌|解锁流媒体_126
+      - YouTube梦歌|解锁流媒体_154
+      - YouTube梦歌|解锁流媒体_152
+      - YouTube梦歌|Netflix_52
+      - Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_153
+      - YouTube梦歌|Netflix_96
+      - YouTube梦歌|Netflix_97
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_125
+      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_113
+      - YouTube梦歌|Netflix_108
       - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_150
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_159
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_61
-      - Y1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_84
+      - YouTube梦歌|Netflix_124
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|解锁流媒体_102
+      - YouTube梦歌|Netflix_117
+      - YouTube梦歌|解锁流媒体_206
+      - YouTube梦歌|解锁流媒体_130
+      - YouTube梦歌|Netflix_129
+      - Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_186
+      - YouTube梦歌|Netflix_95
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Y2
-      - Y3
-      - Y4
-      - Y5
-      - Y6
-      - Y7
-      - Y8
-      - Y9
-      - Y10
-      - YouTube梦歌|Netflix_144
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_157
-      - YouTube梦歌|Netflix_145
-      - YouTube梦歌|Netflix_138
-      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|解锁流媒体_199
+      - YouTube梦歌|解锁流媒体_155
+      - YouTube梦歌|解锁流媒体_73
+      - YouTube梦歌|解锁流媒体_94
+      - YouTube梦歌|解锁流媒体_178
+      - YouTube梦歌|解锁流媒体_144
+      - YouTube梦歌|解锁流媒体_185
+      - YouTube梦歌|解锁流媒体_211
+      - YouTube梦歌|解锁流媒体_164
+      - YouTube梦歌|解锁流媒体_190
+      - YouTube梦歌|解锁流媒体_159
+      - YouTube梦歌|解锁流媒体_192
+      - YouTube梦歌|解锁流媒体_177
+      - YouTube梦歌|解锁流媒体_93
+      - YouTube梦歌|解锁流媒体_72
+      - YouTube梦歌|解锁流媒体_88
+      - YouTube梦歌|解锁流媒体_195
+      - YouTube梦歌|解锁流媒体_92
+      - YouTube梦歌|解锁流媒体_203
+      - YouTube梦歌|解锁流媒体_183
+      - YouTube梦歌|解锁流媒体_86
+      - YouTube梦歌|解锁流媒体_167
+      - YouTube梦歌|解锁流媒体_184
+      - YouTube梦歌|解锁流媒体_191
+      - YouTube梦歌|解锁流媒体_175
+      - YouTube梦歌|解锁流媒体_158
+      - YouTube梦歌|解锁流媒体_169
+      - YouTube梦歌|解锁流媒体_208
+      - YouTube梦歌|解锁流媒体_85
+      - YouTube梦歌|解锁流媒体_99
+      - YouTube梦歌|解锁流媒体_213
       - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_132
+      - YouTube梦歌|解锁流媒体_182
+      - YouTube梦歌|Netflix_46
+      - YouTube梦歌|解锁流媒体_126
+      - YouTube梦歌|解锁流媒体_154
+      - YouTube梦歌|解锁流媒体_152
+      - YouTube梦歌|Netflix_52
+      - Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_153
+      - YouTube梦歌|Netflix_96
+      - YouTube梦歌|Netflix_97
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_125
+      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_113
+      - YouTube梦歌|Netflix_108
       - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_150
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_159
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_61
-      - Y1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_84
+      - YouTube梦歌|Netflix_124
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|解锁流媒体_102
+      - YouTube梦歌|Netflix_117
+      - YouTube梦歌|解锁流媒体_206
+      - YouTube梦歌|解锁流媒体_130
+      - YouTube梦歌|Netflix_129
+      - Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_186
+      - YouTube梦歌|Netflix_95
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -444,52 +583,69 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Y2
-      - Y3
-      - Y4
-      - Y5
-      - Y6
-      - Y7
-      - Y8
-      - Y9
-      - Y10
-      - YouTube梦歌|Netflix_144
-      - YouTube梦歌|Netflix_20
-      - YouTube梦歌|Netflix_90
-      - YouTube梦歌|Netflix_111
-      - YouTube梦歌|Netflix_64
-      - YouTube梦歌|Netflix_121
-      - YouTube梦歌|Netflix_110
-      - YouTube梦歌|Netflix_83
-      - YouTube梦歌|Netflix_24
-      - YouTube梦歌|Netflix_114
-      - YouTube梦歌|Netflix_134
-      - YouTube梦歌|Netflix_113
-      - YouTube梦歌|Netflix_130
-      - YouTube梦歌|Netflix_33
-      - YouTube梦歌|Netflix_117
-      - YouTube梦歌|Netflix_126
-      - YouTube梦歌|Netflix_115
-      - YouTube梦歌|Netflix_28
-      - YouTube梦歌|Netflix_124
-      - YouTube梦歌|Netflix_49
-      - YouTube梦歌|Netflix_157
-      - YouTube梦歌|Netflix_145
-      - YouTube梦歌|Netflix_138
-      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|解锁流媒体_199
+      - YouTube梦歌|解锁流媒体_155
+      - YouTube梦歌|解锁流媒体_73
+      - YouTube梦歌|解锁流媒体_94
+      - YouTube梦歌|解锁流媒体_178
+      - YouTube梦歌|解锁流媒体_144
+      - YouTube梦歌|解锁流媒体_185
+      - YouTube梦歌|解锁流媒体_211
+      - YouTube梦歌|解锁流媒体_164
+      - YouTube梦歌|解锁流媒体_190
+      - YouTube梦歌|解锁流媒体_159
+      - YouTube梦歌|解锁流媒体_192
+      - YouTube梦歌|解锁流媒体_177
+      - YouTube梦歌|解锁流媒体_93
+      - YouTube梦歌|解锁流媒体_72
+      - YouTube梦歌|解锁流媒体_88
+      - YouTube梦歌|解锁流媒体_195
+      - YouTube梦歌|解锁流媒体_92
+      - YouTube梦歌|解锁流媒体_203
+      - YouTube梦歌|解锁流媒体_183
+      - YouTube梦歌|解锁流媒体_86
+      - YouTube梦歌|解锁流媒体_167
+      - YouTube梦歌|解锁流媒体_184
+      - YouTube梦歌|解锁流媒体_191
+      - YouTube梦歌|解锁流媒体_175
+      - YouTube梦歌|解锁流媒体_158
+      - YouTube梦歌|解锁流媒体_169
+      - YouTube梦歌|解锁流媒体_208
+      - YouTube梦歌|解锁流媒体_85
+      - YouTube梦歌|解锁流媒体_99
+      - YouTube梦歌|解锁流媒体_213
       - YouTube梦歌|Netflix_29
-      - YouTube梦歌|Netflix_132
+      - YouTube梦歌|解锁流媒体_182
+      - YouTube梦歌|Netflix_46
+      - YouTube梦歌|解锁流媒体_126
+      - YouTube梦歌|解锁流媒体_154
+      - YouTube梦歌|解锁流媒体_152
+      - YouTube梦歌|Netflix_52
+      - Trojan|🇹🇼 台湾YouTube梦歌04|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_153
+      - YouTube梦歌|Netflix_96
+      - YouTube梦歌|Netflix_97
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_125
+      - YouTube梦歌|Netflix_119
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_113
+      - YouTube梦歌|Netflix_108
       - YouTube梦歌|Netflix_122
-      - YouTube梦歌|Netflix_80
-      - YouTube梦歌|Netflix_150
-      - YouTube梦歌|Netflix_91
-      - YouTube梦歌|Netflix_118
-      - YouTube梦歌|Netflix_42
-      - YouTube梦歌|Netflix_55
-      - YouTube梦歌|Netflix_159
-      - YouTube梦歌|Netflix_74
-      - YouTube梦歌|Netflix_61
-      - Y1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_84
+      - YouTube梦歌|Netflix_124
+      - Trojan|🇹🇼 台湾YouTube梦歌05|Netflix[流媒体解锁]
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|解锁流媒体_102
+      - YouTube梦歌|Netflix_117
+      - YouTube梦歌|解锁流媒体_206
+      - YouTube梦歌|解锁流媒体_130
+      - YouTube梦歌|Netflix_129
+      - Trojan|🇭🇰 香港YouTube梦歌03|Netflix[流媒体解锁]
+      - YouTube梦歌|解锁流媒体_186
+      - YouTube梦歌|Netflix_95
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
