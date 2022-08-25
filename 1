@@ -5,87 +5,495 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: YouTube梦歌Netflix_1, server: 121c6ca.gb.gladns.com, port: 3382, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌Netflix_17, server: 121c6ca.ga.gladns.com, port: 3383, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌Netflix_5, server: 121c6ca.ga.gladns.com, port: 3382, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌Netflix_23, server: 121c6ca.gb.gladns.com, port: 3384, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌Netflix_25, server: 121c6ca.ga.gladns.com, port: 3384, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌Netflix_46, server: 121c6ca.gb.gladns.com, port: 3383, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: 台湾02, server: dx15.jicojs.com, port: 443, type: ss, cipher: aes-256-gcm, password: 46c027d028b4, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: dx15.jicojs.com, path: "", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: YouTube梦歌Netflix_28, server: 121c6ca.ga.gladns.com, port: 3385, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌Netflix_54, server: 121c6ca.gb.gladns.com, port: 3385, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌Netflix_39, server: 121c6ca.ga.gladns.com, port: 3386, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.ga.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌Netflix_36, server: 121c6ca.gb.gladns.com, port: 3386, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.gb.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_43, server: hk-hkg-sh-hk-02-v2.cdn.savoy.click, port: 21088, type: vmess, uuid: 4d578f9e-6af4-4d29-966f-88c061d075b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: hk-hkg-sh-hk-02-v2.cdn.savoy.click}, udp: true}
-  - {name: YouTube梦歌Netflix_76, server: www.cjf0423.ml, port: 443, type: trojan, password: !<str> 111111, sni: www.cjf0423.ml, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_34, server: pp1.zhengzhongfeizhu.xyz, port: 33002, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: pp1.zhengzhongfeizhu.xyz, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌Netflix_74, server: 121c6ca.xd.gladns.com, port: 3389, type: trojan, password: 8a1ab0df6abea549, sni: 121c6ca.xd.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_13, server: 120.240.236.44, port: 16790, type: vmess, uuid: 64f47958-e824-35bd-b6cc-71729de4474e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /soda, ws-headers: {Host: 120.240.236.44}, udp: true}
+  - {name: YouTube梦歌|Netflix_7, server: fndxshk1000mline001.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 50db7fd78cdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxshk1000mline001.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_10, server: fnhk1gline001.fnline.xyz, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: 35b13f9dd755, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1gline001.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_18, server: su.balink.buzz, port: 38611, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002, udp: true}
+  - {name: YouTube梦歌|Netflix_78, server: su.balink.buzz, port: 28600, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002, udp: true}
+  - {name: YouTube梦歌|Netflix_4, server: sz.balink.buzz, port: 38610, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002, udp: true}
+  - {name: YouTube梦歌|Netflix_48, server: al.balink.buzz, port: 28601, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002, udp: true}
+  - {name: YouTube梦歌|Netflix_3, server: n1.nufsx.top, port: 24100, type: ss, cipher: chacha20-ietf-poly1305, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063, udp: true}
+  - {name: YouTube梦歌|Netflix_70, server: v5.emovpn.xyz, port: 125, type: vmess, uuid: 4d66c561-e5df-4b5e-b599-38f146217074, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
+  - {name: YouTube梦歌|Netflix_27, server: n2.nufsx.top, port: 24101, type: ss, cipher: chacha20-ietf-poly1305, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063, udp: true}
+  - {name: YouTube梦歌|Netflix_4 2, server: cm-gz.okvpn.xyz, port: 20010, type: trojan, password: b68a87bb-bea4-4c37-a8bf-61c1ee4ebfba, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_22, server: fndxshk1000mline006.fnline.info, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: db83a372671f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxshk1000mline006.fnline.info, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_12, server: cu.kapoknode.com, port: 21201, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_6, server: cm.kapoknode.com, port: 21205, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_5, server: su.balink.buzz, port: 38666, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002, udp: true}
+  - {name: YouTube梦歌|Netflix_17, server: fn600mliness010.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: ee3dfbbe3dca, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness010.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_73, server: cu.kapoknode.com, port: 21206, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_54, server: cm.kapoknode.com, port: 21207, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_59, server: 20.2.85.81, port: 57920, type: vmess, uuid: af17615c-93ad-410f-9239-45e67483acb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.2.85.81}, udp: true}
+  - {name: YouTube梦歌|Netflix_11, server: iepl.1314com.com, port: 40110, type: ss, cipher: chacha20-ietf-poly1305, password: de44a4f3-d0ea-48c0-a16f-4016cba22823, udp: true}
+  - {name: YouTube梦歌|Netflix_2, server: cm-gz.okvpn.xyz, port: 20007, type: trojan, password: b68a87bb-bea4-4c37-a8bf-61c1ee4ebfba, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_71, server: 20.2.87.101, port: 57920, type: vmess, uuid: af17615c-93ad-410f-9239-45e67483acb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.2.87.101}, udp: true}
+  - {name: YouTube梦歌|Netflix_80, server: apt-get.sku.hair, port: 443, type: vmess, uuid: de69d6c7-9588-3b46-be12-620276ac974f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /aaex, ws-headers: {Host: cdn.aaeo.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_75, server: 20.255.63.135, port: 57920, type: vmess, uuid: af17615c-93ad-410f-9239-45e67483acb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.255.63.135}, udp: true}
+  - {name: YouTube梦歌|Netflix_19, server: cm.kapoknode.com, port: 21208, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_6 2, server: fndxshk1000mline003.fnline.xyz, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: c3d44eb5b92f, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxshk1000mline003.fnline.xyz, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_65, server: apt-get.sku.hair, port: 443, type: vmess, uuid: b2db08ce-1038-363e-be62-ff58e2f92c45, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /aaex, ws-headers: {Host: cdn.aaeo.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_43, server: cm1.kapoknode.com, port: 21209, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_2 2, server: fn600mliness011.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 2d59efdde6c9, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness011.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_20, server: n1.sgdns.club, port: 23101, type: ss, cipher: chacha20-ietf-poly1305, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063, udp: true}
+  - {name: YouTube梦歌|Netflix_21, server: fn600mliness012.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: a7f2fb3db93c, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness012.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_60, server: 20.2.67.84, port: 12345, type: vmess, uuid: af17615c-93ad-410f-9239-45e67483acb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.2.67.84}, udp: true}
+  - {name: YouTube梦歌|Netflix_35, server: 20.24.80.249, port: 443, type: vmess, uuid: de69d6c7-9588-3b46-be12-620276ac974f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cca, ws-headers: {Host: api.accoa.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_13, server: api.tog.hair, port: 443, type: vmess, uuid: b2db08ce-1038-363e-be62-ff58e2f92c45, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cca, ws-headers: {Host: api.accoa.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_25, server: n4.sgys1024.xyz, port: 44103, type: ss, cipher: aes-256-gcm, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063, udp: true}
+  - {name: YouTube梦歌|Netflix_63, server: apib.tog.hair, port: 443, type: vmess, uuid: de69d6c7-9588-3b46-be12-620276ac974f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cca, ws-headers: {Host: api.accoa.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_68, server: 20.255.56.107, port: 57920, type: vmess, uuid: af17615c-93ad-410f-9239-45e67483acb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.255.56.107}, udp: true}
+  - {name: YouTube梦歌|Netflix_67, server: get-app.sku.hair, port: 443, type: vmess, uuid: de69d6c7-9588-3b46-be12-620276ac974f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /aaex, ws-headers: {Host: cdn.aaeo.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_26, server: cm.kapoknode.com, port: 21206, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_33, server: fresh.missionsec.us, port: 18331, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: fresh.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_29, server: kansas.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: kansas.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_53, server: movies.missionsec.us, port: 18331, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: movies.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_23, server: su.balink.buzz, port: 38605, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002, udp: true}
+  - {name: YouTube梦歌|Netflix_85, server: 104.208.68.21, port: 443, type: vmess, uuid: b2db08ce-1038-363e-be62-ff58e2f92c45, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /aaex, ws-headers: {Host: cdn.aaeo.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_35 2, server: hacks.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: hacks.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_51, server: cm.kapoknode.com, port: 21210, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_37, server: pride.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: pride.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_24, server: games.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: games.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_26 2, server: music.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: music.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_58, server: iepl.1314com.com, port: 11223, type: ss, cipher: chacha20-ietf-poly1305, password: de44a4f3-d0ea-48c0-a16f-4016cba22823, udp: true}
+  - {name: YouTube梦歌|Netflix_88, server: 20.255.60.115, port: 57920, type: vmess, uuid: af17615c-93ad-410f-9239-45e67483acb6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.255.60.115}, udp: true}
+  - {name: YouTube梦歌|Netflix_70 2, server: picks.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: picks.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_16, server: fn600mlines008.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fc568c325d09, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mlines008.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_32, server: editors.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: editors.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_48 2, server: books.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: books.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_45, server: nevada.missionsec.us, port: 443, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: nevada.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_45 2, server: mpls.1314com.online, port: 11223, type: ss, cipher: chacha20-ietf-poly1305, password: de44a4f3-d0ea-48c0-a16f-4016cba22823, udp: true}
+  - {name: YouTube梦歌|Netflix_27 2, server: hawaii.missionsec.us, port: 18331, type: trojan, password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw, sni: hawaii.missionsec.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_90, server: n6.sg1024.xyz, port: 26106, type: ss, cipher: chacha20-ietf-poly1305, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063, udp: true}
+  - {name: YouTube梦歌|Netflix_100, server: gkdcu.gkdnode.top, port: 21216, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_1, server: fnhk1glines002re.fnline.club, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: edbe138e9e7d, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1glines002re.fnline.club, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_57, server: 104.208.68.21, port: 443, type: vmess, uuid: de69d6c7-9588-3b46-be12-620276ac974f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /aaex, ws-headers: {Host: cdn.aaeo.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_91, server: get-app.sku.hair, port: 443, type: vmess, uuid: b2db08ce-1038-363e-be62-ff58e2f92c45, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /aaex, ws-headers: {Host: cdn.aaeo.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_72, server: api.tog.hair, port: 443, type: vmess, uuid: de69d6c7-9588-3b46-be12-620276ac974f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cca, ws-headers: {Host: api.accoa.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_74, server: 20.24.80.249, port: 443, type: vmess, uuid: b2db08ce-1038-363e-be62-ff58e2f92c45, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cca, ws-headers: {Host: api.accoa.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_31, server: cm.kapoknode.com, port: 21216, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_17 2, server: cm-gz.okvpn.xyz, port: 20009, type: trojan, password: b68a87bb-bea4-4c37-a8bf-61c1ee4ebfba, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_37 2, server: cu.kapoknode.com, port: 21215, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_42, server: su.balink.buzz, port: 38602, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002, udp: true}
+  - {name: YouTube梦歌|Netflix_44, server: cm.kapoknode.com, port: 21213, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_101, server: gkdcu.gkdnode.top, port: 21214, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_41, server: cu.kapoknode.com, port: 21214, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_66, server: apib.accoa.buzz, port: 443, type: vmess, uuid: b2db08ce-1038-363e-be62-ff58e2f92c45, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cca, ws-headers: {Host: api.accoa.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_61, server: apia.tog.hair, port: 443, type: vmess, uuid: de69d6c7-9588-3b46-be12-620276ac974f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cca, ws-headers: {Host: api.accoa.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_77, server: apib.tog.hair, port: 443, type: vmess, uuid: b2db08ce-1038-363e-be62-ff58e2f92c45, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cca, ws-headers: {Host: api.accoa.buzz}, udp: true}
+  - {name: YouTube梦歌|Netflix_102, server: gkdcu.gkdnode.top, port: 21215, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_14, server: cf.naixii.top, port: 443, type: vmess, uuid: 5e6f7d1f-ae22-48b4-9d73-88314de4d4a7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qvFvfAfHvz, ws-headers: {Host: bvm.naixii.top}, udp: true}
+  - {name: YouTube梦歌|Netflix_38, server: cm.kapoknode.com, port: 21214, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_36, server: cm.kapoknode.com, port: 21215, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_82, server: 198.211.4.60, port: 80, type: vmess, uuid: 1c65cfed-0b0c-4e21-92aa-90c9663a654f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 198.211.4.60}, udp: true}
+  - {name: YouTube梦歌|Netflix_49, server: sz.balink.buzz, port: 38604, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002, udp: true}
+  - {name: YouTube梦歌|Netflix_1 2, server: cm-gz.okvpn.xyz, port: 20003, type: trojan, password: b68a87bb-bea4-4c37-a8bf-61c1ee4ebfba, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_83, server: 38.91.107.37, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: YouTube梦歌|Netflix_40, server: n3.sgys1024.xyz, port: 44102, type: ss, cipher: aes-256-gcm, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063, udp: true}
+  - {name: YouTube梦歌|Netflix_87, server: 38.91.107.72, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: YouTube梦歌|Netflix_114, server: 38.91.107.72, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube梦歌|Netflix_25 2, server: 38.91.107.37, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube梦歌|Netflix_78 2, server: 38.91.107.37, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: YouTube梦歌|Netflix_54 2, server: 38.91.107.72, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: YouTube梦歌|Netflix_18 2, server: 38.91.107.72, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube梦歌|Netflix_20 2, server: 38.121.43.204, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: YouTube梦歌|Netflix_24 2, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: YouTube梦歌|Netflix_88 2, server: 38.91.106.75, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube梦歌|Netflix_82 2, server: 38.75.136.34, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube梦歌|Netflix_104, server: 38.91.107.37, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube梦歌|Netflix_13 2, server: fnhk1gline002.fnline.me, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: 957abf07c5a6, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fnhk1gline002.fnline.me, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_15, server: sy.balink.buzz, port: 28600, type: ss, cipher: chacha20-ietf-poly1305, password: c9fd34af-ec18-41cb-bf93-9b723cc8b002, udp: true}
+  - {name: YouTube梦歌|Netflix_40 2, server: 38.91.107.37, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube梦歌|Netflix_27 3, server: cm-gz.okvpn.xyz, port: 20000, type: trojan, password: b68a87bb-bea4-4c37-a8bf-61c1ee4ebfba, sni: cm-gz.okvpn.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_33 2, server: ru.hootfun.top, port: 42332, type: trojan, password: 2752e6eb-a19b-4217-b33a-d94d07f7f07d, sni: ru.hootfun.top, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_3 2, server: fn600mliness013.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1b584982dbdc, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fn600mliness013.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_99, server: 38.91.106.75, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube梦歌|Netflix_32 2, server: 38.75.136.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: YouTube梦歌|Netflix_37 3, server: 38.91.107.37, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube梦歌|Netflix_28, server: 38.91.107.37, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: YouTube梦歌|Netflix_102 2, server: 38.75.136.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube梦歌|Netflix_109, server: 38.91.107.66, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube梦歌|Netflix_100 2, server: 38.91.107.37, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: YouTube梦歌|Netflix_56, server: 38.91.107.66, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube梦歌|Netflix_103, server: 38.91.107.66, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube梦歌|Netflix_69, server: cm.kapoknode.com, port: 21209, type: ss, cipher: chacha20-ietf-poly1305, password: 742bc08e-edce-406b-9977-35affaa5ecd4, udp: true}
+  - {name: YouTube梦歌|Netflix_50, server: us-spartan-01.bxiny.top, port: 443, type: vmess, uuid: 94cb2284-085e-41e1-9d9c-38ffc3ad7063, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /114514.mp4, ws-headers: {Host: us-spartan-01.bxiny.top}, udp: true}
+  - {name: YouTube梦歌|Netflix_64, server: 38.91.107.66, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: YouTube梦歌|Netflix_74 2, server: 38.75.136.34, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube梦歌|Netflix_77 2, server: 38.75.136.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: YouTube梦歌|Netflix_34, server: 38.75.136.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: YouTube梦歌|Netflix_95, server: n1.sgys1024.xyz, port: 44101, type: ss, cipher: aes-256-gcm, password: 94cb2284-085e-41e1-9d9c-38ffc3ad7063, udp: true}
+  - {name: YouTube梦歌|Netflix_25 3, server: fndxus1000mline001.fnline.vip, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 563b1dc7d669, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: fndxus1000mline001.fnline.vip, path: /, tls: true, mux: true, skip-cert-verify: true}, udp: true}
+  - {name: YouTube梦歌|Netflix_83 2, server: 38.91.107.72, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌Netflix_1
-      - YouTube梦歌Netflix_17
-      - YouTube梦歌Netflix_5
-      - YouTube梦歌Netflix_23
-      - YouTube梦歌Netflix_25
-      - YouTube梦歌Netflix_46
-      - 台湾02
-      - YouTube梦歌Netflix_28
-      - YouTube梦歌Netflix_54
-      - YouTube梦歌Netflix_39
-      - YouTube梦歌Netflix_36
+      - YouTube梦歌|Netflix_7
+      - YouTube梦歌|Netflix_10
+      - YouTube梦歌|Netflix_18
+      - YouTube梦歌|Netflix_78
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_48
+      - YouTube梦歌|Netflix_3
+      - YouTube梦歌|Netflix_70
+      - YouTube梦歌|Netflix_27
+      - YouTube梦歌|Netflix_4 2
+      - YouTube梦歌|Netflix_22
+      - YouTube梦歌|Netflix_12
+      - YouTube梦歌|Netflix_6
+      - YouTube梦歌|Netflix_5
+      - YouTube梦歌|Netflix_17
+      - YouTube梦歌|Netflix_73
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_11
+      - YouTube梦歌|Netflix_2
+      - YouTube梦歌|Netflix_71
+      - YouTube梦歌|Netflix_80
+      - YouTube梦歌|Netflix_75
+      - YouTube梦歌|Netflix_19
+      - YouTube梦歌|Netflix_6 2
+      - YouTube梦歌|Netflix_65
       - YouTube梦歌|Netflix_43
-      - YouTube梦歌Netflix_76
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌Netflix_74
+      - YouTube梦歌|Netflix_2 2
+      - YouTube梦歌|Netflix_20
+      - YouTube梦歌|Netflix_21
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_35
       - YouTube梦歌|Netflix_13
+      - YouTube梦歌|Netflix_25
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_33
+      - YouTube梦歌|Netflix_29
+      - YouTube梦歌|Netflix_53
+      - YouTube梦歌|Netflix_23
+      - YouTube梦歌|Netflix_85
+      - YouTube梦歌|Netflix_35 2
+      - YouTube梦歌|Netflix_51
+      - YouTube梦歌|Netflix_37
+      - YouTube梦歌|Netflix_24
+      - YouTube梦歌|Netflix_26 2
+      - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_88
+      - YouTube梦歌|Netflix_70 2
+      - YouTube梦歌|Netflix_16
+      - YouTube梦歌|Netflix_32
+      - YouTube梦歌|Netflix_48 2
+      - YouTube梦歌|Netflix_45
+      - YouTube梦歌|Netflix_45 2
+      - YouTube梦歌|Netflix_27 2
+      - YouTube梦歌|Netflix_90
+      - YouTube梦歌|Netflix_100
+      - YouTube梦歌|Netflix_1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_91
+      - YouTube梦歌|Netflix_72
+      - YouTube梦歌|Netflix_74
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_17 2
+      - YouTube梦歌|Netflix_37 2
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_44
+      - YouTube梦歌|Netflix_101
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_77
+      - YouTube梦歌|Netflix_102
+      - YouTube梦歌|Netflix_14
+      - YouTube梦歌|Netflix_38
+      - YouTube梦歌|Netflix_36
+      - YouTube梦歌|Netflix_82
+      - YouTube梦歌|Netflix_49
+      - YouTube梦歌|Netflix_1 2
+      - YouTube梦歌|Netflix_83
+      - YouTube梦歌|Netflix_40
+      - YouTube梦歌|Netflix_87
+      - YouTube梦歌|Netflix_114
+      - YouTube梦歌|Netflix_25 2
+      - YouTube梦歌|Netflix_78 2
+      - YouTube梦歌|Netflix_54 2
+      - YouTube梦歌|Netflix_18 2
+      - YouTube梦歌|Netflix_20 2
+      - YouTube梦歌|Netflix_24 2
+      - YouTube梦歌|Netflix_88 2
+      - YouTube梦歌|Netflix_82 2
+      - YouTube梦歌|Netflix_104
+      - YouTube梦歌|Netflix_13 2
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|Netflix_40 2
+      - YouTube梦歌|Netflix_27 3
+      - YouTube梦歌|Netflix_33 2
+      - YouTube梦歌|Netflix_3 2
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_32 2
+      - YouTube梦歌|Netflix_37 3
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_102 2
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_100 2
+      - YouTube梦歌|Netflix_56
+      - YouTube梦歌|Netflix_103
+      - YouTube梦歌|Netflix_69
+      - YouTube梦歌|Netflix_50
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_74 2
+      - YouTube梦歌|Netflix_77 2
+      - YouTube梦歌|Netflix_34
+      - YouTube梦歌|Netflix_95
+      - YouTube梦歌|Netflix_25 3
+      - YouTube梦歌|Netflix_83 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - YouTube梦歌Netflix_1
-      - YouTube梦歌Netflix_17
-      - YouTube梦歌Netflix_5
-      - YouTube梦歌Netflix_23
-      - YouTube梦歌Netflix_25
-      - YouTube梦歌Netflix_46
-      - 台湾02
-      - YouTube梦歌Netflix_28
-      - YouTube梦歌Netflix_54
-      - YouTube梦歌Netflix_39
-      - YouTube梦歌Netflix_36
+      - YouTube梦歌|Netflix_7
+      - YouTube梦歌|Netflix_10
+      - YouTube梦歌|Netflix_18
+      - YouTube梦歌|Netflix_78
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_48
+      - YouTube梦歌|Netflix_3
+      - YouTube梦歌|Netflix_70
+      - YouTube梦歌|Netflix_27
+      - YouTube梦歌|Netflix_4 2
+      - YouTube梦歌|Netflix_22
+      - YouTube梦歌|Netflix_12
+      - YouTube梦歌|Netflix_6
+      - YouTube梦歌|Netflix_5
+      - YouTube梦歌|Netflix_17
+      - YouTube梦歌|Netflix_73
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_11
+      - YouTube梦歌|Netflix_2
+      - YouTube梦歌|Netflix_71
+      - YouTube梦歌|Netflix_80
+      - YouTube梦歌|Netflix_75
+      - YouTube梦歌|Netflix_19
+      - YouTube梦歌|Netflix_6 2
+      - YouTube梦歌|Netflix_65
       - YouTube梦歌|Netflix_43
-      - YouTube梦歌Netflix_76
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌Netflix_74
+      - YouTube梦歌|Netflix_2 2
+      - YouTube梦歌|Netflix_20
+      - YouTube梦歌|Netflix_21
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_35
       - YouTube梦歌|Netflix_13
+      - YouTube梦歌|Netflix_25
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_33
+      - YouTube梦歌|Netflix_29
+      - YouTube梦歌|Netflix_53
+      - YouTube梦歌|Netflix_23
+      - YouTube梦歌|Netflix_85
+      - YouTube梦歌|Netflix_35 2
+      - YouTube梦歌|Netflix_51
+      - YouTube梦歌|Netflix_37
+      - YouTube梦歌|Netflix_24
+      - YouTube梦歌|Netflix_26 2
+      - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_88
+      - YouTube梦歌|Netflix_70 2
+      - YouTube梦歌|Netflix_16
+      - YouTube梦歌|Netflix_32
+      - YouTube梦歌|Netflix_48 2
+      - YouTube梦歌|Netflix_45
+      - YouTube梦歌|Netflix_45 2
+      - YouTube梦歌|Netflix_27 2
+      - YouTube梦歌|Netflix_90
+      - YouTube梦歌|Netflix_100
+      - YouTube梦歌|Netflix_1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_91
+      - YouTube梦歌|Netflix_72
+      - YouTube梦歌|Netflix_74
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_17 2
+      - YouTube梦歌|Netflix_37 2
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_44
+      - YouTube梦歌|Netflix_101
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_77
+      - YouTube梦歌|Netflix_102
+      - YouTube梦歌|Netflix_14
+      - YouTube梦歌|Netflix_38
+      - YouTube梦歌|Netflix_36
+      - YouTube梦歌|Netflix_82
+      - YouTube梦歌|Netflix_49
+      - YouTube梦歌|Netflix_1 2
+      - YouTube梦歌|Netflix_83
+      - YouTube梦歌|Netflix_40
+      - YouTube梦歌|Netflix_87
+      - YouTube梦歌|Netflix_114
+      - YouTube梦歌|Netflix_25 2
+      - YouTube梦歌|Netflix_78 2
+      - YouTube梦歌|Netflix_54 2
+      - YouTube梦歌|Netflix_18 2
+      - YouTube梦歌|Netflix_20 2
+      - YouTube梦歌|Netflix_24 2
+      - YouTube梦歌|Netflix_88 2
+      - YouTube梦歌|Netflix_82 2
+      - YouTube梦歌|Netflix_104
+      - YouTube梦歌|Netflix_13 2
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|Netflix_40 2
+      - YouTube梦歌|Netflix_27 3
+      - YouTube梦歌|Netflix_33 2
+      - YouTube梦歌|Netflix_3 2
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_32 2
+      - YouTube梦歌|Netflix_37 3
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_102 2
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_100 2
+      - YouTube梦歌|Netflix_56
+      - YouTube梦歌|Netflix_103
+      - YouTube梦歌|Netflix_69
+      - YouTube梦歌|Netflix_50
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_74 2
+      - YouTube梦歌|Netflix_77 2
+      - YouTube梦歌|Netflix_34
+      - YouTube梦歌|Netflix_95
+      - YouTube梦歌|Netflix_25 3
+      - YouTube梦歌|Netflix_83 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌Netflix_1
-      - YouTube梦歌Netflix_17
-      - YouTube梦歌Netflix_5
-      - YouTube梦歌Netflix_23
-      - YouTube梦歌Netflix_25
-      - YouTube梦歌Netflix_46
-      - 台湾02
-      - YouTube梦歌Netflix_28
-      - YouTube梦歌Netflix_54
-      - YouTube梦歌Netflix_39
-      - YouTube梦歌Netflix_36
+      - YouTube梦歌|Netflix_7
+      - YouTube梦歌|Netflix_10
+      - YouTube梦歌|Netflix_18
+      - YouTube梦歌|Netflix_78
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_48
+      - YouTube梦歌|Netflix_3
+      - YouTube梦歌|Netflix_70
+      - YouTube梦歌|Netflix_27
+      - YouTube梦歌|Netflix_4 2
+      - YouTube梦歌|Netflix_22
+      - YouTube梦歌|Netflix_12
+      - YouTube梦歌|Netflix_6
+      - YouTube梦歌|Netflix_5
+      - YouTube梦歌|Netflix_17
+      - YouTube梦歌|Netflix_73
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_11
+      - YouTube梦歌|Netflix_2
+      - YouTube梦歌|Netflix_71
+      - YouTube梦歌|Netflix_80
+      - YouTube梦歌|Netflix_75
+      - YouTube梦歌|Netflix_19
+      - YouTube梦歌|Netflix_6 2
+      - YouTube梦歌|Netflix_65
       - YouTube梦歌|Netflix_43
-      - YouTube梦歌Netflix_76
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌Netflix_74
+      - YouTube梦歌|Netflix_2 2
+      - YouTube梦歌|Netflix_20
+      - YouTube梦歌|Netflix_21
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_35
       - YouTube梦歌|Netflix_13
+      - YouTube梦歌|Netflix_25
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_33
+      - YouTube梦歌|Netflix_29
+      - YouTube梦歌|Netflix_53
+      - YouTube梦歌|Netflix_23
+      - YouTube梦歌|Netflix_85
+      - YouTube梦歌|Netflix_35 2
+      - YouTube梦歌|Netflix_51
+      - YouTube梦歌|Netflix_37
+      - YouTube梦歌|Netflix_24
+      - YouTube梦歌|Netflix_26 2
+      - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_88
+      - YouTube梦歌|Netflix_70 2
+      - YouTube梦歌|Netflix_16
+      - YouTube梦歌|Netflix_32
+      - YouTube梦歌|Netflix_48 2
+      - YouTube梦歌|Netflix_45
+      - YouTube梦歌|Netflix_45 2
+      - YouTube梦歌|Netflix_27 2
+      - YouTube梦歌|Netflix_90
+      - YouTube梦歌|Netflix_100
+      - YouTube梦歌|Netflix_1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_91
+      - YouTube梦歌|Netflix_72
+      - YouTube梦歌|Netflix_74
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_17 2
+      - YouTube梦歌|Netflix_37 2
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_44
+      - YouTube梦歌|Netflix_101
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_77
+      - YouTube梦歌|Netflix_102
+      - YouTube梦歌|Netflix_14
+      - YouTube梦歌|Netflix_38
+      - YouTube梦歌|Netflix_36
+      - YouTube梦歌|Netflix_82
+      - YouTube梦歌|Netflix_49
+      - YouTube梦歌|Netflix_1 2
+      - YouTube梦歌|Netflix_83
+      - YouTube梦歌|Netflix_40
+      - YouTube梦歌|Netflix_87
+      - YouTube梦歌|Netflix_114
+      - YouTube梦歌|Netflix_25 2
+      - YouTube梦歌|Netflix_78 2
+      - YouTube梦歌|Netflix_54 2
+      - YouTube梦歌|Netflix_18 2
+      - YouTube梦歌|Netflix_20 2
+      - YouTube梦歌|Netflix_24 2
+      - YouTube梦歌|Netflix_88 2
+      - YouTube梦歌|Netflix_82 2
+      - YouTube梦歌|Netflix_104
+      - YouTube梦歌|Netflix_13 2
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|Netflix_40 2
+      - YouTube梦歌|Netflix_27 3
+      - YouTube梦歌|Netflix_33 2
+      - YouTube梦歌|Netflix_3 2
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_32 2
+      - YouTube梦歌|Netflix_37 3
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_102 2
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_100 2
+      - YouTube梦歌|Netflix_56
+      - YouTube梦歌|Netflix_103
+      - YouTube梦歌|Netflix_69
+      - YouTube梦歌|Netflix_50
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_74 2
+      - YouTube梦歌|Netflix_77 2
+      - YouTube梦歌|Netflix_34
+      - YouTube梦歌|Netflix_95
+      - YouTube梦歌|Netflix_25 3
+      - YouTube梦歌|Netflix_83 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -104,92 +512,499 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube梦歌Netflix_1
-      - YouTube梦歌Netflix_17
-      - YouTube梦歌Netflix_5
-      - YouTube梦歌Netflix_23
-      - YouTube梦歌Netflix_25
-      - YouTube梦歌Netflix_46
-      - 台湾02
-      - YouTube梦歌Netflix_28
-      - YouTube梦歌Netflix_54
-      - YouTube梦歌Netflix_39
-      - YouTube梦歌Netflix_36
+      - YouTube梦歌|Netflix_7
+      - YouTube梦歌|Netflix_10
+      - YouTube梦歌|Netflix_18
+      - YouTube梦歌|Netflix_78
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_48
+      - YouTube梦歌|Netflix_3
+      - YouTube梦歌|Netflix_70
+      - YouTube梦歌|Netflix_27
+      - YouTube梦歌|Netflix_4 2
+      - YouTube梦歌|Netflix_22
+      - YouTube梦歌|Netflix_12
+      - YouTube梦歌|Netflix_6
+      - YouTube梦歌|Netflix_5
+      - YouTube梦歌|Netflix_17
+      - YouTube梦歌|Netflix_73
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_11
+      - YouTube梦歌|Netflix_2
+      - YouTube梦歌|Netflix_71
+      - YouTube梦歌|Netflix_80
+      - YouTube梦歌|Netflix_75
+      - YouTube梦歌|Netflix_19
+      - YouTube梦歌|Netflix_6 2
+      - YouTube梦歌|Netflix_65
       - YouTube梦歌|Netflix_43
-      - YouTube梦歌Netflix_76
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌Netflix_74
+      - YouTube梦歌|Netflix_2 2
+      - YouTube梦歌|Netflix_20
+      - YouTube梦歌|Netflix_21
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_35
       - YouTube梦歌|Netflix_13
+      - YouTube梦歌|Netflix_25
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_33
+      - YouTube梦歌|Netflix_29
+      - YouTube梦歌|Netflix_53
+      - YouTube梦歌|Netflix_23
+      - YouTube梦歌|Netflix_85
+      - YouTube梦歌|Netflix_35 2
+      - YouTube梦歌|Netflix_51
+      - YouTube梦歌|Netflix_37
+      - YouTube梦歌|Netflix_24
+      - YouTube梦歌|Netflix_26 2
+      - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_88
+      - YouTube梦歌|Netflix_70 2
+      - YouTube梦歌|Netflix_16
+      - YouTube梦歌|Netflix_32
+      - YouTube梦歌|Netflix_48 2
+      - YouTube梦歌|Netflix_45
+      - YouTube梦歌|Netflix_45 2
+      - YouTube梦歌|Netflix_27 2
+      - YouTube梦歌|Netflix_90
+      - YouTube梦歌|Netflix_100
+      - YouTube梦歌|Netflix_1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_91
+      - YouTube梦歌|Netflix_72
+      - YouTube梦歌|Netflix_74
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_17 2
+      - YouTube梦歌|Netflix_37 2
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_44
+      - YouTube梦歌|Netflix_101
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_77
+      - YouTube梦歌|Netflix_102
+      - YouTube梦歌|Netflix_14
+      - YouTube梦歌|Netflix_38
+      - YouTube梦歌|Netflix_36
+      - YouTube梦歌|Netflix_82
+      - YouTube梦歌|Netflix_49
+      - YouTube梦歌|Netflix_1 2
+      - YouTube梦歌|Netflix_83
+      - YouTube梦歌|Netflix_40
+      - YouTube梦歌|Netflix_87
+      - YouTube梦歌|Netflix_114
+      - YouTube梦歌|Netflix_25 2
+      - YouTube梦歌|Netflix_78 2
+      - YouTube梦歌|Netflix_54 2
+      - YouTube梦歌|Netflix_18 2
+      - YouTube梦歌|Netflix_20 2
+      - YouTube梦歌|Netflix_24 2
+      - YouTube梦歌|Netflix_88 2
+      - YouTube梦歌|Netflix_82 2
+      - YouTube梦歌|Netflix_104
+      - YouTube梦歌|Netflix_13 2
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|Netflix_40 2
+      - YouTube梦歌|Netflix_27 3
+      - YouTube梦歌|Netflix_33 2
+      - YouTube梦歌|Netflix_3 2
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_32 2
+      - YouTube梦歌|Netflix_37 3
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_102 2
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_100 2
+      - YouTube梦歌|Netflix_56
+      - YouTube梦歌|Netflix_103
+      - YouTube梦歌|Netflix_69
+      - YouTube梦歌|Netflix_50
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_74 2
+      - YouTube梦歌|Netflix_77 2
+      - YouTube梦歌|Netflix_34
+      - YouTube梦歌|Netflix_95
+      - YouTube梦歌|Netflix_25 3
+      - YouTube梦歌|Netflix_83 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾02
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - YouTube梦歌Netflix_1
-      - YouTube梦歌Netflix_17
-      - YouTube梦歌Netflix_5
-      - YouTube梦歌Netflix_23
-      - YouTube梦歌Netflix_25
-      - YouTube梦歌Netflix_46
-      - 台湾02
-      - YouTube梦歌Netflix_28
-      - YouTube梦歌Netflix_54
-      - YouTube梦歌Netflix_39
-      - YouTube梦歌Netflix_36
+      - YouTube梦歌|Netflix_7
+      - YouTube梦歌|Netflix_10
+      - YouTube梦歌|Netflix_18
+      - YouTube梦歌|Netflix_78
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_48
+      - YouTube梦歌|Netflix_3
+      - YouTube梦歌|Netflix_70
+      - YouTube梦歌|Netflix_27
+      - YouTube梦歌|Netflix_4 2
+      - YouTube梦歌|Netflix_22
+      - YouTube梦歌|Netflix_12
+      - YouTube梦歌|Netflix_6
+      - YouTube梦歌|Netflix_5
+      - YouTube梦歌|Netflix_17
+      - YouTube梦歌|Netflix_73
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_11
+      - YouTube梦歌|Netflix_2
+      - YouTube梦歌|Netflix_71
+      - YouTube梦歌|Netflix_80
+      - YouTube梦歌|Netflix_75
+      - YouTube梦歌|Netflix_19
+      - YouTube梦歌|Netflix_6 2
+      - YouTube梦歌|Netflix_65
       - YouTube梦歌|Netflix_43
-      - YouTube梦歌Netflix_76
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌Netflix_74
+      - YouTube梦歌|Netflix_2 2
+      - YouTube梦歌|Netflix_20
+      - YouTube梦歌|Netflix_21
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_35
       - YouTube梦歌|Netflix_13
+      - YouTube梦歌|Netflix_25
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_33
+      - YouTube梦歌|Netflix_29
+      - YouTube梦歌|Netflix_53
+      - YouTube梦歌|Netflix_23
+      - YouTube梦歌|Netflix_85
+      - YouTube梦歌|Netflix_35 2
+      - YouTube梦歌|Netflix_51
+      - YouTube梦歌|Netflix_37
+      - YouTube梦歌|Netflix_24
+      - YouTube梦歌|Netflix_26 2
+      - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_88
+      - YouTube梦歌|Netflix_70 2
+      - YouTube梦歌|Netflix_16
+      - YouTube梦歌|Netflix_32
+      - YouTube梦歌|Netflix_48 2
+      - YouTube梦歌|Netflix_45
+      - YouTube梦歌|Netflix_45 2
+      - YouTube梦歌|Netflix_27 2
+      - YouTube梦歌|Netflix_90
+      - YouTube梦歌|Netflix_100
+      - YouTube梦歌|Netflix_1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_91
+      - YouTube梦歌|Netflix_72
+      - YouTube梦歌|Netflix_74
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_17 2
+      - YouTube梦歌|Netflix_37 2
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_44
+      - YouTube梦歌|Netflix_101
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_77
+      - YouTube梦歌|Netflix_102
+      - YouTube梦歌|Netflix_14
+      - YouTube梦歌|Netflix_38
+      - YouTube梦歌|Netflix_36
+      - YouTube梦歌|Netflix_82
+      - YouTube梦歌|Netflix_49
+      - YouTube梦歌|Netflix_1 2
+      - YouTube梦歌|Netflix_83
+      - YouTube梦歌|Netflix_40
+      - YouTube梦歌|Netflix_87
+      - YouTube梦歌|Netflix_114
+      - YouTube梦歌|Netflix_25 2
+      - YouTube梦歌|Netflix_78 2
+      - YouTube梦歌|Netflix_54 2
+      - YouTube梦歌|Netflix_18 2
+      - YouTube梦歌|Netflix_20 2
+      - YouTube梦歌|Netflix_24 2
+      - YouTube梦歌|Netflix_88 2
+      - YouTube梦歌|Netflix_82 2
+      - YouTube梦歌|Netflix_104
+      - YouTube梦歌|Netflix_13 2
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|Netflix_40 2
+      - YouTube梦歌|Netflix_27 3
+      - YouTube梦歌|Netflix_33 2
+      - YouTube梦歌|Netflix_3 2
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_32 2
+      - YouTube梦歌|Netflix_37 3
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_102 2
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_100 2
+      - YouTube梦歌|Netflix_56
+      - YouTube梦歌|Netflix_103
+      - YouTube梦歌|Netflix_69
+      - YouTube梦歌|Netflix_50
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_74 2
+      - YouTube梦歌|Netflix_77 2
+      - YouTube梦歌|Netflix_34
+      - YouTube梦歌|Netflix_95
+      - YouTube梦歌|Netflix_25 3
+      - YouTube梦歌|Netflix_83 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - YouTube梦歌Netflix_1
-      - YouTube梦歌Netflix_17
-      - YouTube梦歌Netflix_5
-      - YouTube梦歌Netflix_23
-      - YouTube梦歌Netflix_25
-      - YouTube梦歌Netflix_46
-      - 台湾02
-      - YouTube梦歌Netflix_28
-      - YouTube梦歌Netflix_54
-      - YouTube梦歌Netflix_39
-      - YouTube梦歌Netflix_36
+      - YouTube梦歌|Netflix_7
+      - YouTube梦歌|Netflix_10
+      - YouTube梦歌|Netflix_18
+      - YouTube梦歌|Netflix_78
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_48
+      - YouTube梦歌|Netflix_3
+      - YouTube梦歌|Netflix_70
+      - YouTube梦歌|Netflix_27
+      - YouTube梦歌|Netflix_4 2
+      - YouTube梦歌|Netflix_22
+      - YouTube梦歌|Netflix_12
+      - YouTube梦歌|Netflix_6
+      - YouTube梦歌|Netflix_5
+      - YouTube梦歌|Netflix_17
+      - YouTube梦歌|Netflix_73
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_11
+      - YouTube梦歌|Netflix_2
+      - YouTube梦歌|Netflix_71
+      - YouTube梦歌|Netflix_80
+      - YouTube梦歌|Netflix_75
+      - YouTube梦歌|Netflix_19
+      - YouTube梦歌|Netflix_6 2
+      - YouTube梦歌|Netflix_65
       - YouTube梦歌|Netflix_43
-      - YouTube梦歌Netflix_76
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌Netflix_74
+      - YouTube梦歌|Netflix_2 2
+      - YouTube梦歌|Netflix_20
+      - YouTube梦歌|Netflix_21
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_35
       - YouTube梦歌|Netflix_13
+      - YouTube梦歌|Netflix_25
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_33
+      - YouTube梦歌|Netflix_29
+      - YouTube梦歌|Netflix_53
+      - YouTube梦歌|Netflix_23
+      - YouTube梦歌|Netflix_85
+      - YouTube梦歌|Netflix_35 2
+      - YouTube梦歌|Netflix_51
+      - YouTube梦歌|Netflix_37
+      - YouTube梦歌|Netflix_24
+      - YouTube梦歌|Netflix_26 2
+      - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_88
+      - YouTube梦歌|Netflix_70 2
+      - YouTube梦歌|Netflix_16
+      - YouTube梦歌|Netflix_32
+      - YouTube梦歌|Netflix_48 2
+      - YouTube梦歌|Netflix_45
+      - YouTube梦歌|Netflix_45 2
+      - YouTube梦歌|Netflix_27 2
+      - YouTube梦歌|Netflix_90
+      - YouTube梦歌|Netflix_100
+      - YouTube梦歌|Netflix_1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_91
+      - YouTube梦歌|Netflix_72
+      - YouTube梦歌|Netflix_74
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_17 2
+      - YouTube梦歌|Netflix_37 2
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_44
+      - YouTube梦歌|Netflix_101
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_77
+      - YouTube梦歌|Netflix_102
+      - YouTube梦歌|Netflix_14
+      - YouTube梦歌|Netflix_38
+      - YouTube梦歌|Netflix_36
+      - YouTube梦歌|Netflix_82
+      - YouTube梦歌|Netflix_49
+      - YouTube梦歌|Netflix_1 2
+      - YouTube梦歌|Netflix_83
+      - YouTube梦歌|Netflix_40
+      - YouTube梦歌|Netflix_87
+      - YouTube梦歌|Netflix_114
+      - YouTube梦歌|Netflix_25 2
+      - YouTube梦歌|Netflix_78 2
+      - YouTube梦歌|Netflix_54 2
+      - YouTube梦歌|Netflix_18 2
+      - YouTube梦歌|Netflix_20 2
+      - YouTube梦歌|Netflix_24 2
+      - YouTube梦歌|Netflix_88 2
+      - YouTube梦歌|Netflix_82 2
+      - YouTube梦歌|Netflix_104
+      - YouTube梦歌|Netflix_13 2
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|Netflix_40 2
+      - YouTube梦歌|Netflix_27 3
+      - YouTube梦歌|Netflix_33 2
+      - YouTube梦歌|Netflix_3 2
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_32 2
+      - YouTube梦歌|Netflix_37 3
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_102 2
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_100 2
+      - YouTube梦歌|Netflix_56
+      - YouTube梦歌|Netflix_103
+      - YouTube梦歌|Netflix_69
+      - YouTube梦歌|Netflix_50
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_74 2
+      - YouTube梦歌|Netflix_77 2
+      - YouTube梦歌|Netflix_34
+      - YouTube梦歌|Netflix_95
+      - YouTube梦歌|Netflix_25 3
+      - YouTube梦歌|Netflix_83 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌Netflix_1
-      - YouTube梦歌Netflix_17
-      - YouTube梦歌Netflix_5
-      - YouTube梦歌Netflix_23
-      - YouTube梦歌Netflix_25
-      - YouTube梦歌Netflix_46
-      - 台湾02
-      - YouTube梦歌Netflix_28
-      - YouTube梦歌Netflix_54
-      - YouTube梦歌Netflix_39
-      - YouTube梦歌Netflix_36
+      - YouTube梦歌|Netflix_7
+      - YouTube梦歌|Netflix_10
+      - YouTube梦歌|Netflix_18
+      - YouTube梦歌|Netflix_78
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_48
+      - YouTube梦歌|Netflix_3
+      - YouTube梦歌|Netflix_70
+      - YouTube梦歌|Netflix_27
+      - YouTube梦歌|Netflix_4 2
+      - YouTube梦歌|Netflix_22
+      - YouTube梦歌|Netflix_12
+      - YouTube梦歌|Netflix_6
+      - YouTube梦歌|Netflix_5
+      - YouTube梦歌|Netflix_17
+      - YouTube梦歌|Netflix_73
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_11
+      - YouTube梦歌|Netflix_2
+      - YouTube梦歌|Netflix_71
+      - YouTube梦歌|Netflix_80
+      - YouTube梦歌|Netflix_75
+      - YouTube梦歌|Netflix_19
+      - YouTube梦歌|Netflix_6 2
+      - YouTube梦歌|Netflix_65
       - YouTube梦歌|Netflix_43
-      - YouTube梦歌Netflix_76
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌Netflix_74
+      - YouTube梦歌|Netflix_2 2
+      - YouTube梦歌|Netflix_20
+      - YouTube梦歌|Netflix_21
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_35
       - YouTube梦歌|Netflix_13
+      - YouTube梦歌|Netflix_25
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_33
+      - YouTube梦歌|Netflix_29
+      - YouTube梦歌|Netflix_53
+      - YouTube梦歌|Netflix_23
+      - YouTube梦歌|Netflix_85
+      - YouTube梦歌|Netflix_35 2
+      - YouTube梦歌|Netflix_51
+      - YouTube梦歌|Netflix_37
+      - YouTube梦歌|Netflix_24
+      - YouTube梦歌|Netflix_26 2
+      - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_88
+      - YouTube梦歌|Netflix_70 2
+      - YouTube梦歌|Netflix_16
+      - YouTube梦歌|Netflix_32
+      - YouTube梦歌|Netflix_48 2
+      - YouTube梦歌|Netflix_45
+      - YouTube梦歌|Netflix_45 2
+      - YouTube梦歌|Netflix_27 2
+      - YouTube梦歌|Netflix_90
+      - YouTube梦歌|Netflix_100
+      - YouTube梦歌|Netflix_1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_91
+      - YouTube梦歌|Netflix_72
+      - YouTube梦歌|Netflix_74
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_17 2
+      - YouTube梦歌|Netflix_37 2
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_44
+      - YouTube梦歌|Netflix_101
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_77
+      - YouTube梦歌|Netflix_102
+      - YouTube梦歌|Netflix_14
+      - YouTube梦歌|Netflix_38
+      - YouTube梦歌|Netflix_36
+      - YouTube梦歌|Netflix_82
+      - YouTube梦歌|Netflix_49
+      - YouTube梦歌|Netflix_1 2
+      - YouTube梦歌|Netflix_83
+      - YouTube梦歌|Netflix_40
+      - YouTube梦歌|Netflix_87
+      - YouTube梦歌|Netflix_114
+      - YouTube梦歌|Netflix_25 2
+      - YouTube梦歌|Netflix_78 2
+      - YouTube梦歌|Netflix_54 2
+      - YouTube梦歌|Netflix_18 2
+      - YouTube梦歌|Netflix_20 2
+      - YouTube梦歌|Netflix_24 2
+      - YouTube梦歌|Netflix_88 2
+      - YouTube梦歌|Netflix_82 2
+      - YouTube梦歌|Netflix_104
+      - YouTube梦歌|Netflix_13 2
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|Netflix_40 2
+      - YouTube梦歌|Netflix_27 3
+      - YouTube梦歌|Netflix_33 2
+      - YouTube梦歌|Netflix_3 2
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_32 2
+      - YouTube梦歌|Netflix_37 3
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_102 2
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_100 2
+      - YouTube梦歌|Netflix_56
+      - YouTube梦歌|Netflix_103
+      - YouTube梦歌|Netflix_69
+      - YouTube梦歌|Netflix_50
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_74 2
+      - YouTube梦歌|Netflix_77 2
+      - YouTube梦歌|Netflix_34
+      - YouTube梦歌|Netflix_95
+      - YouTube梦歌|Netflix_25 3
+      - YouTube梦歌|Netflix_83 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -205,22 +1020,124 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube梦歌Netflix_1
-      - YouTube梦歌Netflix_17
-      - YouTube梦歌Netflix_5
-      - YouTube梦歌Netflix_23
-      - YouTube梦歌Netflix_25
-      - YouTube梦歌Netflix_46
-      - 台湾02
-      - YouTube梦歌Netflix_28
-      - YouTube梦歌Netflix_54
-      - YouTube梦歌Netflix_39
-      - YouTube梦歌Netflix_36
+      - YouTube梦歌|Netflix_7
+      - YouTube梦歌|Netflix_10
+      - YouTube梦歌|Netflix_18
+      - YouTube梦歌|Netflix_78
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_48
+      - YouTube梦歌|Netflix_3
+      - YouTube梦歌|Netflix_70
+      - YouTube梦歌|Netflix_27
+      - YouTube梦歌|Netflix_4 2
+      - YouTube梦歌|Netflix_22
+      - YouTube梦歌|Netflix_12
+      - YouTube梦歌|Netflix_6
+      - YouTube梦歌|Netflix_5
+      - YouTube梦歌|Netflix_17
+      - YouTube梦歌|Netflix_73
+      - YouTube梦歌|Netflix_54
+      - YouTube梦歌|Netflix_59
+      - YouTube梦歌|Netflix_11
+      - YouTube梦歌|Netflix_2
+      - YouTube梦歌|Netflix_71
+      - YouTube梦歌|Netflix_80
+      - YouTube梦歌|Netflix_75
+      - YouTube梦歌|Netflix_19
+      - YouTube梦歌|Netflix_6 2
+      - YouTube梦歌|Netflix_65
       - YouTube梦歌|Netflix_43
-      - YouTube梦歌Netflix_76
-      - YouTube梦歌|Netflix_34
-      - YouTube梦歌Netflix_74
+      - YouTube梦歌|Netflix_2 2
+      - YouTube梦歌|Netflix_20
+      - YouTube梦歌|Netflix_21
+      - YouTube梦歌|Netflix_60
+      - YouTube梦歌|Netflix_35
       - YouTube梦歌|Netflix_13
+      - YouTube梦歌|Netflix_25
+      - YouTube梦歌|Netflix_63
+      - YouTube梦歌|Netflix_68
+      - YouTube梦歌|Netflix_67
+      - YouTube梦歌|Netflix_26
+      - YouTube梦歌|Netflix_33
+      - YouTube梦歌|Netflix_29
+      - YouTube梦歌|Netflix_53
+      - YouTube梦歌|Netflix_23
+      - YouTube梦歌|Netflix_85
+      - YouTube梦歌|Netflix_35 2
+      - YouTube梦歌|Netflix_51
+      - YouTube梦歌|Netflix_37
+      - YouTube梦歌|Netflix_24
+      - YouTube梦歌|Netflix_26 2
+      - YouTube梦歌|Netflix_58
+      - YouTube梦歌|Netflix_88
+      - YouTube梦歌|Netflix_70 2
+      - YouTube梦歌|Netflix_16
+      - YouTube梦歌|Netflix_32
+      - YouTube梦歌|Netflix_48 2
+      - YouTube梦歌|Netflix_45
+      - YouTube梦歌|Netflix_45 2
+      - YouTube梦歌|Netflix_27 2
+      - YouTube梦歌|Netflix_90
+      - YouTube梦歌|Netflix_100
+      - YouTube梦歌|Netflix_1
+      - YouTube梦歌|Netflix_57
+      - YouTube梦歌|Netflix_91
+      - YouTube梦歌|Netflix_72
+      - YouTube梦歌|Netflix_74
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_17 2
+      - YouTube梦歌|Netflix_37 2
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_44
+      - YouTube梦歌|Netflix_101
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_66
+      - YouTube梦歌|Netflix_61
+      - YouTube梦歌|Netflix_77
+      - YouTube梦歌|Netflix_102
+      - YouTube梦歌|Netflix_14
+      - YouTube梦歌|Netflix_38
+      - YouTube梦歌|Netflix_36
+      - YouTube梦歌|Netflix_82
+      - YouTube梦歌|Netflix_49
+      - YouTube梦歌|Netflix_1 2
+      - YouTube梦歌|Netflix_83
+      - YouTube梦歌|Netflix_40
+      - YouTube梦歌|Netflix_87
+      - YouTube梦歌|Netflix_114
+      - YouTube梦歌|Netflix_25 2
+      - YouTube梦歌|Netflix_78 2
+      - YouTube梦歌|Netflix_54 2
+      - YouTube梦歌|Netflix_18 2
+      - YouTube梦歌|Netflix_20 2
+      - YouTube梦歌|Netflix_24 2
+      - YouTube梦歌|Netflix_88 2
+      - YouTube梦歌|Netflix_82 2
+      - YouTube梦歌|Netflix_104
+      - YouTube梦歌|Netflix_13 2
+      - YouTube梦歌|Netflix_15
+      - YouTube梦歌|Netflix_40 2
+      - YouTube梦歌|Netflix_27 3
+      - YouTube梦歌|Netflix_33 2
+      - YouTube梦歌|Netflix_3 2
+      - YouTube梦歌|Netflix_99
+      - YouTube梦歌|Netflix_32 2
+      - YouTube梦歌|Netflix_37 3
+      - YouTube梦歌|Netflix_28
+      - YouTube梦歌|Netflix_102 2
+      - YouTube梦歌|Netflix_109
+      - YouTube梦歌|Netflix_100 2
+      - YouTube梦歌|Netflix_56
+      - YouTube梦歌|Netflix_103
+      - YouTube梦歌|Netflix_69
+      - YouTube梦歌|Netflix_50
+      - YouTube梦歌|Netflix_64
+      - YouTube梦歌|Netflix_74 2
+      - YouTube梦歌|Netflix_77 2
+      - YouTube梦歌|Netflix_34
+      - YouTube梦歌|Netflix_95
+      - YouTube梦歌|Netflix_25 3
+      - YouTube梦歌|Netflix_83 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
