@@ -5,67 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 916_台湾-9.44MB, server: gbo03.vsvideo.shop, port: 25634, type: trojan, password: eb2f8154-ff58-3b99-b393-28c8eecdbe64, sni: gbo03.vsvideo.shop, skip-cert-verify: true, udp: true}
-  - {name: 917_台湾-9.35MB, server: gbo03.vsvideo.shop, port: 25634, type: trojan, password: 177501cc-f0c2-3cc3-b9a7-8c1e8e27655f, sni: gbo03.vsvideo.shop, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_56, server: tw-tpe-hq-v2.node.inforun.work, port: 10188, type: vmess, uuid: b46e5bfe-739c-4026-91fd-686209ce6d85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: cdn.savoy.click}, udp: true}
-  - {name: "[ss]🇨🇳[CN]qkhxc.websitesv3.com:9521(6071345b7a58134cc962c96f7a502ae6)", server: qkhxc.websitesv3.com, port: 9521, type: ss, cipher: aes-256-gcm, password: 6071345b7a58134cc962c96f7a502ae6, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
-  - {name: YouTube梦歌|Netflix_63, server: v85.xn--6nq44r2uh9rhj7f.com, port: 80, type: vmess, uuid: 7e7bd534-7542-414e-a08e-965c2bd46d63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.me/mengge88888888}, udp: true}
-  - {name: YouTube梦歌|Netflix_84, server: 134.195.196.143, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: YouTube梦歌|Netflix_16 2, server: sl.xdmb.cc, port: 29247, type: vmess, uuid: 652a0d25-9b95-3a4b-b75c-5f1da1d3d502, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_16, server: 36.137.235.221, port: 45015, type: vmess, uuid: 77aed262-2b64-4ca7-9feb-fc8a9a9cd655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "[ss]🇨🇳[CN]debian10.domainsv3.com:8003(0a00fe526e3592521559427839020652)", server: debian10.domainsv3.com, port: 8003, type: ss, cipher: chacha20-ietf-poly1305, password: 0a00fe526e3592521559427839020652, plugin: obfs, plugin-opts: {mode: http, host: 924af1d4735e.microsoft.com}, udp: true}
-  - {name: YouTube梦歌|Netflix_13, server: 36.137.235.221, port: 45517, type: vmess, uuid: 77aed262-2b64-4ca7-9feb-fc8a9a9cd655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: YouTube梦歌|Netflix_35, server: 38.121.43.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: YouTube梦歌|Netflix_41, server: 40.73.113.150, port: 30008, type: ss, cipher: aes-128-gcm, password: 9YyoIVZhk0vMFmz4, udp: true}
+  - {name: YouTube梦歌|Netflix_31, server: usa001.369boy.com, port: 56301, type: trojan, password: 06bdd305-7399-4558-98d8-594ec44b4fed, sni: usa001.369boy.com, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_42, server: cn201.03download.xyz, port: 11016, type: vmess, uuid: 93367339-24a1-38fc-8706-84b9abeb49f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_4, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: 95ecb97c-e448-44f5-9192-6653edb57a07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet02, ws-headers: {Host: cs.daxun.cyou}, udp: true}
+  - {name: YouTube梦歌|Netflix_8, server: 36.137.235.221, port: 45507, type: vmess, uuid: 77aed262-2b64-4ca7-9feb-fc8a9a9cd655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_76, server: i1.go001.buzz, port: 32601, type: ss, cipher: aes-256-gcm, password: bBEXIq, udp: true}
+  - {name: YouTube梦歌|Netflix_32, server: 36.137.235.221, port: 45517, type: vmess, uuid: 77aed262-2b64-4ca7-9feb-fc8a9a9cd655, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube梦歌|Netflix_13, server: cn201.03download.xyz, port: 11016, type: vmess, uuid: 93367339-24a1-38fc-8706-84b9abeb49f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 916_台湾-9.44MB
-      - 917_台湾-9.35MB
-      - YouTube梦歌|Netflix_56
-      - "[ss]🇨🇳[CN]qkhxc.websitesv3.com:9521(6071345b7a58134cc962c96f7a502ae6)"
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_16 2
-      - YouTube梦歌|Netflix_16
-      - "[ss]🇨🇳[CN]debian10.domainsv3.com:8003(0a00fe526e3592521559427839020652)"
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_8
+      - YouTube梦歌|Netflix_76
+      - YouTube梦歌|Netflix_32
       - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_35
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 916_台湾-9.44MB
-      - 917_台湾-9.35MB
-      - YouTube梦歌|Netflix_56
-      - "[ss]🇨🇳[CN]qkhxc.websitesv3.com:9521(6071345b7a58134cc962c96f7a502ae6)"
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_16 2
-      - YouTube梦歌|Netflix_16
-      - "[ss]🇨🇳[CN]debian10.domainsv3.com:8003(0a00fe526e3592521559427839020652)"
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_8
+      - YouTube梦歌|Netflix_76
+      - YouTube梦歌|Netflix_32
       - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_35
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 916_台湾-9.44MB
-      - 917_台湾-9.35MB
-      - YouTube梦歌|Netflix_56
-      - "[ss]🇨🇳[CN]qkhxc.websitesv3.com:9521(6071345b7a58134cc962c96f7a502ae6)"
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_16 2
-      - YouTube梦歌|Netflix_16
-      - "[ss]🇨🇳[CN]debian10.domainsv3.com:8003(0a00fe526e3592521559427839020652)"
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_8
+      - YouTube梦歌|Netflix_76
+      - YouTube梦歌|Netflix_32
       - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_35
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,73 +72,59 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 916_台湾-9.44MB
-      - 917_台湾-9.35MB
-      - YouTube梦歌|Netflix_56
-      - "[ss]🇨🇳[CN]qkhxc.websitesv3.com:9521(6071345b7a58134cc962c96f7a502ae6)"
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_16 2
-      - YouTube梦歌|Netflix_16
-      - "[ss]🇨🇳[CN]debian10.domainsv3.com:8003(0a00fe526e3592521559427839020652)"
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_8
+      - YouTube梦歌|Netflix_76
+      - YouTube梦歌|Netflix_32
       - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_35
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 916_台湾-9.44MB
-      - 917_台湾-9.35MB
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 916_台湾-9.44MB
-      - 917_台湾-9.35MB
-      - YouTube梦歌|Netflix_56
-      - "[ss]🇨🇳[CN]qkhxc.websitesv3.com:9521(6071345b7a58134cc962c96f7a502ae6)"
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_16 2
-      - YouTube梦歌|Netflix_16
-      - "[ss]🇨🇳[CN]debian10.domainsv3.com:8003(0a00fe526e3592521559427839020652)"
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_8
+      - YouTube梦歌|Netflix_76
+      - YouTube梦歌|Netflix_32
       - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_35
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 916_台湾-9.44MB
-      - 917_台湾-9.35MB
-      - YouTube梦歌|Netflix_56
-      - "[ss]🇨🇳[CN]qkhxc.websitesv3.com:9521(6071345b7a58134cc962c96f7a502ae6)"
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_16 2
-      - YouTube梦歌|Netflix_16
-      - "[ss]🇨🇳[CN]debian10.domainsv3.com:8003(0a00fe526e3592521559427839020652)"
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_8
+      - YouTube梦歌|Netflix_76
+      - YouTube梦歌|Netflix_32
       - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_35
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 916_台湾-9.44MB
-      - 917_台湾-9.35MB
-      - YouTube梦歌|Netflix_56
-      - "[ss]🇨🇳[CN]qkhxc.websitesv3.com:9521(6071345b7a58134cc962c96f7a502ae6)"
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_16 2
-      - YouTube梦歌|Netflix_16
-      - "[ss]🇨🇳[CN]debian10.domainsv3.com:8003(0a00fe526e3592521559427839020652)"
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_8
+      - YouTube梦歌|Netflix_76
+      - YouTube梦歌|Netflix_32
       - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_35
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -166,17 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 916_台湾-9.44MB
-      - 917_台湾-9.35MB
-      - YouTube梦歌|Netflix_56
-      - "[ss]🇨🇳[CN]qkhxc.websitesv3.com:9521(6071345b7a58134cc962c96f7a502ae6)"
-      - YouTube梦歌|Netflix_63
-      - YouTube梦歌|Netflix_84
-      - YouTube梦歌|Netflix_16 2
-      - YouTube梦歌|Netflix_16
-      - "[ss]🇨🇳[CN]debian10.domainsv3.com:8003(0a00fe526e3592521559427839020652)"
+      - YouTube梦歌|Netflix_41
+      - YouTube梦歌|Netflix_31
+      - YouTube梦歌|Netflix_42
+      - YouTube梦歌|Netflix_4
+      - YouTube梦歌|Netflix_8
+      - YouTube梦歌|Netflix_76
+      - YouTube梦歌|Netflix_32
       - YouTube梦歌|Netflix_13
-      - YouTube梦歌|Netflix_35
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
